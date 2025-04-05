@@ -24,3 +24,16 @@ FASTA to PHYLIP:
 RF Distances:
 	python package, https://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html#robinson-foulds-distance
 
+# Datasets
+
+ROSE 1000M1-M4, 1000L1-L3
+	Datasets used in the original MAGUS paper
+	see https://doi.org/10.13012/B2IDB-2643961_V1
+
+RNASim 1'000, 10'000
+	Datasets used in the original MAGUS paper
+	see https://doi.org/10.13012/B2IDB-2643961_V1
+
+16.S CRW (Gutell)
+	Datasets used in the original MAGUS paper
+	see https://doi.org/10.13012/B2IDB-2643961_V1
