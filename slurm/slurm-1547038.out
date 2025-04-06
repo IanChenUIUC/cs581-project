@@ -1,0 +1,1021 @@
+MAGUS was run with: /u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -d /u/ianchen3/magus_temp/magus_working_dir-1547038 --overwrite
+Running a task, output file: /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree
+Aligning sequences /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta
+Read 1000 sequences from /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta ..
+Building PASTA-style FastTree initial tree on /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta with skeleton size 300..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_align.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/skeleton_sequences.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/temp_initial_align.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_align.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/hmmer/hmmbuild --ere 0.59 --cpu 1 --symfrac 0.0 --informat afa /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/skeleton_hmm/temp_hmm_model.txt /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_align.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+Read 700 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/queries.txt ..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/hmmer/hmmalign -o /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/chunks_queries/temp_queries_chunk_1_aligned.txt /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/skeleton_hmm/hmm_model.txt /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/chunks_queries/queries_chunk_1.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+Read 1000 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_align.txt ..
+Found 100% ACGT-N, assuming DNA..
+Data type wasn't specified. Inferred data type DNA from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_align.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_tree.tre
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/fasttree/FastTreeMP -nt -gtr -fastest -nosupport /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_align.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/temp_initial_tree.tre
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/initial_tree/initial_tree.tre
+Built initial tree on /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta in 137.10468697547913 sec..
+Using target subset size of 50, and maximum number of subsets 25..
+Read 1000 sequences from /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta ..
+Decomposing a tree with 1000 leaves into 409 and 591..
+Decomposing a tree with 591 leaves into 310 and 281..
+Decomposing a tree with 409 leaves into 181 and 228..
+Decomposing a tree with 310 leaves into 173 and 137..
+Decomposing a tree with 281 leaves into 149 and 132..
+Decomposing a tree with 228 leaves into 105 and 123..
+Decomposing a tree with 181 leaves into 95 and 86..
+Decomposing a tree with 173 leaves into 96 and 77..
+Decomposing a tree with 149 leaves into 73 and 76..
+Decomposing a tree with 137 leaves into 50 and 87..
+Decomposing a tree with 132 leaves into 72 and 60..
+Decomposing a tree with 123 leaves into 72 and 51..
+Decomposing a tree with 105 leaves into 65 and 40..
+Decomposing a tree with 96 leaves into 58 and 38..
+Decomposing a tree with 95 leaves into 51 and 44..
+Decomposing a tree with 87 leaves into 38 and 49..
+Decomposing a tree with 86 leaves into 35 and 51..
+Decomposing a tree with 77 leaves into 34 and 43..
+Decomposing a tree with 76 leaves into 34 and 42..
+Decomposing a tree with 73 leaves into 35 and 38..
+Decomposing a tree with 72 leaves into 33 and 39..
+Decomposing a tree with 72 leaves into 36 and 36..
+Decomposing a tree with 65 leaves into 37 and 28..
+Decomposing a tree with 60 leaves into 28 and 32..
+Decomposed /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta into 25 subsets in 137.31994795799255 sec..
+Building 25 subalignments..
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt ..
+Subset has 50/200 sequences, aligning with MAFFT..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt ..
+Subset has 51/200 sequences, aligning with MAFFT..
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt ..
+Subset has 40/200 sequences, aligning with MAFFT..
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt ..
+Subset has 58/200 sequences, aligning with MAFFT..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt ..
+Subset has 38/200 sequences, aligning with MAFFT..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt ..
+Subset has 51/200 sequences, aligning with MAFFT..
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt ..
+Subset has 44/200 sequences, aligning with MAFFT..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt ..
+Subset has 38/200 sequences, aligning with MAFFT..
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt ..
+Subset has 49/200 sequences, aligning with MAFFT..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt ..
+Subset has 35/200 sequences, aligning with MAFFT..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt ..
+Subset has 51/200 sequences, aligning with MAFFT..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt ..
+Subset has 34/200 sequences, aligning with MAFFT..
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt ..
+Subset has 43/200 sequences, aligning with MAFFT..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt ..
+Subset has 34/200 sequences, aligning with MAFFT..
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt ..
+Subset has 42/200 sequences, aligning with MAFFT..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt ..
+Subset has 35/200 sequences, aligning with MAFFT..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt ..
+Subset has 38/200 sequences, aligning with MAFFT..
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt ..
+Subset has 33/200 sequences, aligning with MAFFT..
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt ..
+Subset has 39/200 sequences, aligning with MAFFT..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt ..
+Subset has 36/200 sequences, aligning with MAFFT..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt ..
+Subset has 36/200 sequences, aligning with MAFFT..
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt ..
+Subset has 37/200 sequences, aligning with MAFFT..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt ..
+Subset has 28/200 sequences, aligning with MAFFT..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt ..
+Subset has 28/200 sequences, aligning with MAFFT..
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt ..
+Subset has 32/200 sequences, aligning with MAFFT..
+Prepared 25 subset alignment tasks..
+Merging 25 subaligments..
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt ..
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt ..
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt ..
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt ..
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt ..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt ..
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt ..
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_5.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt ..
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt ..
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt ..
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt ..
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt ..
+Using 10 MAFFT backbones..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_5_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_5_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_5_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_3_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_3_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_3_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_7_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_7_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_7_mafft.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_12.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_8_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_8_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_8_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_9.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_22.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_25.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_6_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_6_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_6_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_21.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_2_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_2_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_2_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_1.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_9_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_9_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_9_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_24.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_4_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_4_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_4_mafft.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_10_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_10_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_10_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_15.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_2.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_1_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_1_unalign.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_backbone_1_mafft.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_16.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_19.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_4.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_3.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_8.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_18.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_17.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_14.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_11.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_20.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_7.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_13.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_6.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_10.txt
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt > /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/temp_subalignment_subset_23.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt ..
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt ..
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt ..
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt ..
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt ..
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt ..
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt ..
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt ..
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt ..
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt ..
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_7_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_7_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_7_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_7_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_7_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_8_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_8_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_8_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_8_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_8_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_1_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_1_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_1_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_1_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_1_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_5_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_5_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_5_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_5_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_5_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_2_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_2_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_2_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_2_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_2_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_10_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_10_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_10_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_10_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_10_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_6_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_6_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_6_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_6_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_6_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_9_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_9_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_9_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_9_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_9_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_4_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_4_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_4_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_4_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_4_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_3_mafft.txt
+Feeding backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_3_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_3_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_3_mafft.txt
+Fed backbone /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/backbone_3_mafft.txt to the graph.
+Wrote matrix to /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/graph.txt
+Built the alignment graph in 324.33828496932983 sec..
+Running MCL alignment graph clustering..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/clusters.txt
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mcl/mcl /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/graph.txt --abc -o /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/temp_clusters.txt -I 4
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/clusters.txt
+Found 1014 clusters..
+Clustered the graph in 16.684946060180664 sec..
+Purged duplicate clusters. Found 1014 unique clusters..
+Found 0 row violations and 2122 column violations..
+Finished violations sweep. Now 0 row violations and 0 column violations..
+Purged cluster violations. Found 1014 clean clusters..
+Finding graph trace with minimum clusters heuristic search..
+Reached new search frontier
+{0: 62, 1: 62, 2: 62, 3: 62, 4: 62, 5: 62, 6: 62, 7: 61, 8: 62, 9: 62, 10: 62, 11: 62, 12: 62, 13: 61, 14: 60, 15: 62, 16: 62, 17: 62, 18: 62, 19: 62, 20: 62, 21: 62, 22: 62, 23: 62, 24: 62}
+Safe frontier reached.. dumping 0 from heap and resetting aggression..
+Reached new search frontier
+{0: 176, 1: 176, 2: 172, 3: 176, 4: 176, 5: 176, 6: 176, 7: 175, 8: 176, 9: 175, 10: 176, 11: 176, 12: 176, 13: 173, 14: 173, 15: 173, 16: 175, 17: 176, 18: 175, 19: 176, 20: 176, 21: 176, 22: 172, 23: 175, 24: 175}
+Safe frontier reached.. dumping 3 from heap and resetting aggression..
+Reached new search frontier
+{0: 212, 1: 212, 2: 208, 3: 212, 4: 212, 5: 212, 6: 212, 7: 211, 8: 212, 9: 211, 10: 212, 11: 218, 12: 218, 13: 216, 14: 216, 15: 216, 16: 217, 17: 219, 18: 218, 19: 212, 20: 212, 21: 212, 22: 208, 23: 218, 24: 218}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 213, 1: 213, 2: 209, 3: 213, 4: 213, 5: 214, 6: 213, 7: 212, 8: 213, 9: 212, 10: 213, 11: 219, 12: 219, 13: 217, 14: 217, 15: 217, 16: 218, 17: 220, 18: 219, 19: 213, 20: 213, 21: 213, 22: 209, 23: 219, 24: 219}
+Reached new search frontier
+{0: 218, 1: 218, 2: 217, 3: 218, 4: 218, 5: 220, 6: 218, 7: 217, 8: 218, 9: 217, 10: 218, 11: 224, 12: 224, 13: 223, 14: 223, 15: 221, 16: 222, 17: 224, 18: 223, 19: 218, 20: 218, 21: 218, 22: 214, 23: 223, 24: 223}
+Safe frontier reached.. dumping 12 from heap and resetting aggression..
+Reached new search frontier
+{0: 228, 1: 228, 2: 229, 3: 228, 4: 228, 5: 230, 6: 228, 7: 227, 8: 228, 9: 227, 10: 228, 11: 234, 12: 234, 13: 230, 14: 230, 15: 230, 16: 230, 17: 234, 18: 233, 19: 228, 20: 228, 21: 228, 22: 224, 23: 235, 24: 233}
+Safe frontier reached.. dumping 8 from heap and resetting aggression..
+Reached new search frontier
+{0: 230, 1: 229, 2: 230, 3: 229, 4: 229, 5: 231, 6: 229, 7: 228, 8: 229, 9: 228, 10: 229, 11: 235, 12: 235, 13: 231, 14: 231, 15: 231, 16: 231, 17: 235, 18: 234, 19: 229, 20: 229, 21: 229, 22: 225, 23: 236, 24: 234}
+Reached new search frontier
+{0: 296, 1: 296, 2: 297, 3: 296, 4: 296, 5: 298, 6: 296, 7: 295, 8: 296, 9: 295, 10: 296, 11: 302, 12: 302, 13: 297, 14: 298, 15: 298, 16: 298, 17: 302, 18: 301, 19: 295, 20: 296, 21: 296, 22: 292, 23: 303, 24: 301}
+Safe frontier reached.. dumping 4 from heap and resetting aggression..
+Reached new search frontier
+{0: 324, 1: 323, 2: 322, 3: 325, 4: 325, 5: 327, 6: 325, 7: 324, 8: 325, 9: 321, 10: 320, 11: 330, 12: 330, 13: 326, 14: 327, 15: 327, 16: 327, 17: 331, 18: 330, 19: 323, 20: 325, 21: 325, 22: 321, 23: 332, 24: 330}
+Safe frontier reached.. dumping 2 from heap and resetting aggression..
+Reached new search frontier
+{0: 384, 1: 384, 2: 383, 3: 386, 4: 385, 5: 388, 6: 386, 7: 385, 8: 386, 9: 381, 10: 381, 11: 391, 12: 391, 13: 387, 14: 388, 15: 381, 16: 388, 17: 392, 18: 390, 19: 384, 20: 385, 21: 386, 22: 382, 23: 392, 24: 391}
+Safe frontier reached.. dumping 2 from heap and resetting aggression..
+Reached new search frontier
+{0: 399, 1: 399, 2: 398, 3: 401, 4: 400, 5: 403, 6: 401, 7: 400, 8: 401, 9: 396, 10: 395, 11: 406, 12: 406, 13: 402, 14: 403, 15: 391, 16: 403, 17: 406, 18: 405, 19: 399, 20: 400, 21: 401, 22: 397, 23: 407, 24: 406}
+Safe frontier reached.. dumping 17 from heap and resetting aggression..
+Reached new search frontier
+{0: 403, 1: 403, 2: 402, 3: 405, 4: 404, 5: 407, 6: 405, 7: 404, 8: 405, 9: 400, 10: 399, 11: 410, 12: 410, 13: 406, 14: 407, 15: 395, 16: 407, 17: 410, 18: 409, 19: 403, 20: 404, 21: 405, 22: 401, 23: 411, 24: 410}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 468, 1: 468, 2: 467, 3: 469, 4: 468, 5: 472, 6: 470, 7: 469, 8: 470, 9: 464, 10: 464, 11: 475, 12: 475, 13: 471, 14: 472, 15: 459, 16: 472, 17: 475, 18: 474, 19: 468, 20: 469, 21: 470, 22: 466, 23: 476, 24: 475}
+Safe frontier reached.. dumping 3 from heap and resetting aggression..
+Found alignment graph trace in 0.4557335376739502 sec..
+Found a trace with 1032 clusters and a total cost of 50010771
+Skipping optimization pass..
+Finished optimization in 0.001102447509765625 sec..
+Uncompressed alignment will have 3605000 cells..
+Assembling final alignment in /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt ..
+Appending induced alignment, 35 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt ..
+Appending induced alignment, 35 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt ..
+Appending induced alignment, 43 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt ..
+Appending induced alignment, 58 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt ..
+Appending induced alignment, 40 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt ..
+Appending induced alignment, 32 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt ..
+Appending induced alignment, 50 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt ..
+Appending induced alignment, 34 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt ..
+Appending induced alignment, 33 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt ..
+Appending induced alignment, 36 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt ..
+Appending induced alignment, 28 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt ..
+Appending induced alignment, 44 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt ..
+Appending induced alignment, 34 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt ..
+Appending induced alignment, 36 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt ..
+Appending induced alignment, 42 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt ..
+Appending induced alignment, 37 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt ..
+Appending induced alignment, 39 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt ..
+Appending induced alignment, 28 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt ..
+Appending induced alignment, 49 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Wrote final alignment to /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree
+Merged 25 subalignments into /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree in 343.87225437164307 sec..
+Completed a task, output file: /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree
+Waiting for 0 tasks to finish..
+MAGUS finished in 481.2781698703766 seconds..
+MAGUS was run with: /u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1547038 --overwrite
+Running a task, output file: /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt
+Decomposed None into 25 subsets in 0.02961111068725586 sec..
+Building 25 subalignments..
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt
+Prepared 0 subset alignment tasks..
+Merging 25 subaligments..
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt ..
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt ..
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt ..
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt ..
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt ..
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt ..
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt ..
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt ..
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt ..
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt ..
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt ..
+Found existing graph file /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/graph.txt
+Read matrix from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/graph.txt
+Built the alignment graph in 5.863741159439087 sec..
+Found existing cluster file /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/clusters.txt
+Found 1014 clusters..
+Clustered the graph in 0.0077936649322509766 sec..
+Found existing trace file /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/trace.txt
+Found 1016 clusters..
+Found alignment graph trace in 0.006257057189941406 sec..
+Found a trace with 1016 clusters and a total cost of 50010771
+Skipping optimization pass..
+Finished optimization in 0.0011444091796875 sec..
+Uncompressed alignment will have 3605000 cells..
+Assembling final alignment in /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt ..
+Appending induced alignment, 33 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt ..
+Appending induced alignment, 39 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt ..
+Appending induced alignment, 43 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt ..
+Appending induced alignment, 50 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt ..
+Appending induced alignment, 40 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt ..
+Appending induced alignment, 58 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt ..
+Appending induced alignment, 37 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt ..
+Appending induced alignment, 42 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt ..
+Appending induced alignment, 28 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt ..
+Appending induced alignment, 32 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt ..
+Appending induced alignment, 36 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt ..
+Appending induced alignment, 34 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt ..
+Appending induced alignment, 35 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt ..
+Appending induced alignment, 44 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt ..
+Appending induced alignment, 28 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt ..
+Appending induced alignment, 34 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt ..
+Appending induced alignment, 36 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt ..
+Appending induced alignment, 49 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt ..
+Appending induced alignment, 35 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Wrote final alignment to /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta
+Merged 25 subalignments into /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta in 8.228574275970459 sec..
+Completed a task, output file: /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta
+Waiting for 0 tasks to finish..
+MAGUS finished in 8.32413625717163 seconds..
+MAGUS was run with: /u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1547038 --overwrite
+Running a task, output file: /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt
+Detected existing subset file /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt
+Decomposed None into 25 subsets in 0.02437758445739746 sec..
+Building 25 subalignments..
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt ..
+Existing subalignment file detected: /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt
+Prepared 0 subset alignment tasks..
+Merging 25 subaligments..
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_1.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_2.txt ..
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_3.txt ..
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_4.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_5.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_6.txt ..
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_7.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_8.txt ..
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_9.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_10.txt ..
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_11.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_12.txt ..
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_13.txt ..
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_14.txt ..
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_15.txt ..
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_16.txt ..
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_17.txt ..
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_18.txt ..
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_19.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_20.txt ..
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_21.txt ..
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_22.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_23.txt ..
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_24.txt ..
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/decomposition/subset_25.txt ..
+Found existing graph file /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/graph.txt
+Read matrix from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/graph.txt
+Built the alignment graph in 5.962414026260376 sec..
+Found existing cluster file /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/clusters.txt
+Found 1014 clusters..
+Clustered the graph in 0.008090496063232422 sec..
+Found existing trace file /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/trace.txt
+Found 1016 clusters..
+Found alignment graph trace in 0.006373405456542969 sec..
+Found a trace with 1016 clusters and a total cost of 50010771
+Skipping optimization pass..
+Finished optimization in 0.0010671615600585938 sec..
+Uncompressed alignment will have 3605000 cells..
+Assembling final alignment in /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_22.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt
+Read 37 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_22.txt ..
+Appending induced alignment, 37 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_8.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_8.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_14.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_14.txt ..
+Appending induced alignment, 34 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_5.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_5.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_23.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_23.txt ..
+Appending induced alignment, 28 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_24.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt
+Read 28 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_24.txt ..
+Appending induced alignment, 28 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_6.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_6.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_1.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_1.txt ..
+Appending induced alignment, 50 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_25.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt
+Read 32 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_25.txt ..
+Appending induced alignment, 32 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_19.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_19.txt ..
+Appending induced alignment, 39 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_4.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt
+Read 58 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_4.txt ..
+Appending induced alignment, 58 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_18.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt
+Read 33 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_18.txt ..
+Appending induced alignment, 33 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_17.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_17.txt ..
+Appending induced alignment, 38 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_9.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_9.txt ..
+Appending induced alignment, 49 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_10.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_10.txt ..
+Appending induced alignment, 35 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_2.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_2.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_11.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_11.txt ..
+Appending induced alignment, 51 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_12.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt
+Read 34 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_12.txt ..
+Appending induced alignment, 34 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_20.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_20.txt ..
+Appending induced alignment, 36 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_16.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt
+Read 35 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_16.txt ..
+Appending induced alignment, 35 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_3.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt
+Read 40 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_3.txt ..
+Appending induced alignment, 40 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_7.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt
+Read 44 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_7.txt ..
+Appending induced alignment, 44 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_15.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt
+Read 42 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_15.txt ..
+Appending induced alignment, 42 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_21.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt
+Read 36 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_21.txt ..
+Appending induced alignment, 36 sequences of length 3605..
+Running a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/subalignments/subalignment_subset_13.txt ..
+Completed a task, output file: /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt
+Read 43 sequences from /u/ianchen3/magus_temp/magus_working_dir-1547038/graph/induced_subalignment_subset_13.txt ..
+Appending induced alignment, 43 sequences of length 3605..
+Wrote final alignment to /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta
+Merged 25 subalignments into /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta in 8.34786319732666 sec..
+Completed a task, output file: /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta
+Waiting for 0 tasks to finish..
+MAGUS finished in 8.43326473236084 seconds..
+Traceback (most recent call last):
+  File "/u/ianchen3/scripts/robinson_foulds.py", line 23, in <module>
+    main()
+  File "/u/ianchen3/scripts/robinson_foulds.py", line 10, in main
+    t1 = ete3.Tree(f.read())
+  File "/u/ianchen3/.venv/lib64/python3.9/site-packages/ete3/coretype/tree.py", line 212, in __init__
+    read_newick(newick, root_node = self, format=format,
+  File "/u/ianchen3/.venv/lib64/python3.9/site-packages/ete3/parser/newick.py", line 264, in read_newick
+    raise NewickError('Unexisting tree file or Malformed newick tree structure.')
+ete3.parser.newick.NewickError: Unexisting tree file or Malformed newick tree structure.
+You may want to check other newick loading flags like 'format' or 'quoted_node_names'.
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta ...
+MaxLenNoGap= 1058, NumSeq= 1000, LenRef= 3880, LenEst= 3605, Cells= 7485000
+computing ...
+Number of shared homologies: 444918444
+Number of homologies in the reference alignment: 495478895
+Number of homologies in the estimated alignment: 491672364
+Number of correctly aligned columns: 375
+Number of aligned columns in ref. alignment: 2434
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1446 0
+Number of aligned columns in est. alignment: 2580
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1025 0
+Time to compute (seconds): 0.277
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta ...
+MaxLenNoGap= 1058, NumSeq= 1000, LenRef= 3880, LenEst= 3605, Cells= 7485000
+computing ...
+Number of shared homologies: 444918444
+Number of homologies in the reference alignment: 495478895
+Number of homologies in the estimated alignment: 491672364
+Number of correctly aligned columns: 375
+Number of aligned columns in ref. alignment: 2434
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1446 0
+Number of aligned columns in est. alignment: 2580
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1025 0
+Time to compute (seconds): 0.274

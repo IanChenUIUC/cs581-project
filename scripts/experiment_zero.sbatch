@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=16               # Number of cores per node
 #SBATCH --account=25sp-cs581a-eng          # Account
 #SBATCH --partition=eng-instruction        # Parititon
-#SBATCH --output=$HOME/project/slurm/slurm-%j.out
+#SBATCH --output=/u/ianchen3/project/slurm/slurm-%j.out
 
 # ==============================================================================
 # Setup 
