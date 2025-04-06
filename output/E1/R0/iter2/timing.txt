@@ -1,0 +1,120 @@
+/u/ianchen3/methods/FastTree
+91.21user 0.08system 1:31.77elapsed 99%CPU (0avgtext+0avgdata 72104maxresident)k
+0inputs+216outputs (0major+32594minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.48user 0.08system 0:46.80elapsed 99%CPU (0avgtext+0avgdata 63672maxresident)k
+0inputs+136outputs (0major+41700minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+5864.24user 35.38system 6:25.95elapsed 1528%CPU (0avgtext+0avgdata 1280408maxresident)k
+56080inputs+356896outputs (0major+20397362minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.19user 0.16system 0:02.62elapsed 89%CPU (0avgtext+0avgdata 150196maxresident)k
+6240inputs+13232outputs (0major+72813minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.20user 0.08system 1:31.80elapsed 99%CPU (0avgtext+0avgdata 73132maxresident)k
+0inputs+208outputs (0major+38654minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.53user 0.06system 0:46.85elapsed 99%CPU (0avgtext+0avgdata 64832maxresident)k
+0inputs+144outputs (0major+38984minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.14user 0.15system 0:02.59elapsed 88%CPU (0avgtext+0avgdata 149756maxresident)k
+6240inputs+13216outputs (0major+71829minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.14user 0.14system 0:02.53elapsed 89%CPU (0avgtext+0avgdata 150384maxresident)k
+6240inputs+13232outputs (0major+72455minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.24user 0.09system 1:31.86elapsed 99%CPU (0avgtext+0avgdata 73648maxresident)k
+0inputs+208outputs (0major+39120minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.45user 0.08system 0:46.78elapsed 99%CPU (0avgtext+0avgdata 63840maxresident)k
+0inputs+144outputs (0major+38979minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.13user 0.17system 0:02.59elapsed 89%CPU (0avgtext+0avgdata 150328maxresident)k
+6240inputs+13224outputs (0major+71935minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.18user 0.16system 0:02.62elapsed 89%CPU (0avgtext+0avgdata 150084maxresident)k
+6240inputs+13224outputs (0major+72815minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.27user 0.09system 1:31.85elapsed 99%CPU (0avgtext+0avgdata 71704maxresident)k
+0inputs+192outputs (0major+39019minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.45user 0.07system 0:46.80elapsed 99%CPU (0avgtext+0avgdata 64648maxresident)k
+0inputs+144outputs (0major+39077minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.22user 0.15system 0:02.67elapsed 89%CPU (0avgtext+0avgdata 150464maxresident)k
+6240inputs+13232outputs (0major+71296minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.12user 0.17system 0:02.55elapsed 89%CPU (0avgtext+0avgdata 148480maxresident)k
+6240inputs+13224outputs (0major+72644minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.27user 0.08system 1:31.85elapsed 99%CPU (0avgtext+0avgdata 73164maxresident)k
+0inputs+216outputs (0major+32593minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.46user 0.08system 0:46.81elapsed 99%CPU (0avgtext+0avgdata 63372maxresident)k
+0inputs+128outputs (0major+41692minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.13user 0.17system 0:02.58elapsed 89%CPU (0avgtext+0avgdata 150112maxresident)k
+6240inputs+13232outputs (0major+72300minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.17user 0.16system 0:02.58elapsed 90%CPU (0avgtext+0avgdata 149504maxresident)k
+6240inputs+13216outputs (0major+71654minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.17user 0.07system 1:31.74elapsed 99%CPU (0avgtext+0avgdata 72256maxresident)k
+0inputs+216outputs (0major+32734minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.47user 0.08system 0:46.81elapsed 99%CPU (0avgtext+0avgdata 63580maxresident)k
+0inputs+136outputs (0major+41184minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.24user 0.17system 0:02.71elapsed 89%CPU (0avgtext+0avgdata 149504maxresident)k
+6240inputs+13232outputs (0major+71954minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.14user 0.16system 0:02.59elapsed 88%CPU (0avgtext+0avgdata 150212maxresident)k
+6240inputs+13216outputs (0major+72766minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.32user 0.06system 1:31.91elapsed 99%CPU (0avgtext+0avgdata 72192maxresident)k
+0inputs+208outputs (0major+32709minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.45user 0.08system 0:46.80elapsed 99%CPU (0avgtext+0avgdata 63964maxresident)k
+0inputs+136outputs (0major+41691minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.13user 0.15system 0:02.58elapsed 88%CPU (0avgtext+0avgdata 150324maxresident)k
+6240inputs+13232outputs (0major+71900minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.24user 0.14system 0:02.64elapsed 90%CPU (0avgtext+0avgdata 150336maxresident)k
+6240inputs+13216outputs (0major+72014minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.29user 0.07system 1:31.83elapsed 99%CPU (0avgtext+0avgdata 73056maxresident)k
+0inputs+200outputs (0major+32612minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.60user 0.06system 0:46.94elapsed 99%CPU (0avgtext+0avgdata 63668maxresident)k
+0inputs+136outputs (0major+41791minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.13user 0.16system 0:02.57elapsed 89%CPU (0avgtext+0avgdata 150124maxresident)k
+6240inputs+13232outputs (0major+72834minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.15user 0.16system 0:02.57elapsed 90%CPU (0avgtext+0avgdata 150372maxresident)k
+6240inputs+13224outputs (0major+72234minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.34user 0.06system 1:31.88elapsed 99%CPU (0avgtext+0avgdata 73356maxresident)k
+0inputs+208outputs (0major+32599minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.43user 0.09system 0:46.79elapsed 99%CPU (0avgtext+0avgdata 63176maxresident)k
+0inputs+136outputs (0major+41184minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.13user 0.17system 0:02.73elapsed 84%CPU (0avgtext+0avgdata 150236maxresident)k
+6240inputs+13224outputs (0major+71886minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.13user 0.16system 0:02.55elapsed 89%CPU (0avgtext+0avgdata 150540maxresident)k
+6240inputs+13232outputs (0major+68088minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+91.20user 0.07system 1:31.89elapsed 99%CPU (0avgtext+0avgdata 73036maxresident)k
+0inputs+208outputs (0major+39125minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree
+46.47user 0.09system 0:46.81elapsed 99%CPU (0avgtext+0avgdata 63628maxresident)k
+0inputs+136outputs (0major+38980minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.15user 0.15system 0:02.58elapsed 89%CPU (0avgtext+0avgdata 149744maxresident)k
+6240inputs+13224outputs (0major+72397minor)pagefaults 0swaps
+/u/ianchen3/methods/magus
+2.14user 0.17system 0:02.57elapsed 89%CPU (0avgtext+0avgdata 148584maxresident)k
+6240inputs+13240outputs (0major+72292minor)pagefaults 0swaps

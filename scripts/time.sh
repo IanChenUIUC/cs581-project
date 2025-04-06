@@ -1,3 +1,5 @@
 # ./time.sh <output-file> <command>
-echo $2 >> $1
-/usr/bin/time -o $1 -a $2
+outfile=$1
+shift 1
+echo "$@" >> $outfile
+/usr/bin/time -o $outfile -a $@

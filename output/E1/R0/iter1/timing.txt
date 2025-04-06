@@ -1,12 +1,232 @@
-/u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -d /u/ianchen3/magus_temp/magus_working_dir-1547038 --overwrite
-6033.96user 57.56system 8:01.64elapsed 1264%CPU (0avgtext+0avgdata 1308416maxresident)k
-213864inputs+528016outputs (0major+26043427minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+6190.24user 59.38system 8:17.37elapsed 1256%CPU (0avgtext+0avgdata 1312912maxresident)k
+220616inputs+536056outputs (0major+26429439minor)pagefaults 0swaps
 /u/ianchen3/methods/clustalo --max-hmm-iterations=-1 -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta --guidetree-out=/u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree
-69.94user 0.12system 0:06.04elapsed 1159%CPU (0avgtext+0avgdata 25376maxresident)k
-312inputs+64outputs (3major+20377minor)pagefaults 0swaps
-/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/aln_magus_25.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1547038 --overwrite
-7.39user 0.50system 0:08.61elapsed 91%CPU (0avgtext+0avgdata 526336maxresident)k
-7880inputs+17328outputs (0major+215079minor)pagefaults 0swaps
-/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/aln_clustalo_25.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1547038 --overwrite
-7.54user 0.44system 0:08.69elapsed 91%CPU (0avgtext+0avgdata 527360maxresident)k
-7880inputs+17328outputs (0major+214890minor)pagefaults 0swaps
+69.92user 0.14system 0:06.04elapsed 1159%CPU (0avgtext+0avgdata 25200maxresident)k
+0inputs+64outputs (0major+19302minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.62user 0.49system 0:08.81elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17784outputs (0major+220098minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -t /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/magus_100_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.61user 0.48system 0:08.80elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17784outputs (0major+220336minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -t /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/magus_50_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.61user 0.49system 0:08.79elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17800outputs (0major+219220minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/magus_25_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.72user 0.50system 0:08.93elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17784outputs (0major+219096minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -t /u/ianchen3/project/output/E1/R0/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/magus_10_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.54user 0.48system 0:08.73elapsed 91%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17800outputs (0major+220352minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/clustalo_200_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.92user 0.50system 0:09.11elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17784outputs (0major+235769minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -t /u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/clustalo_100_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.74user 0.49system 0:08.93elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17792outputs (0major+218885minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -t /u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/clustalo_50_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.86user 0.49system 0:09.10elapsed 91%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17792outputs (0major+215726minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/clustalo_25_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.67user 0.46system 0:08.85elapsed 91%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17800outputs (0major+220315minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -t /u/ianchen3/project/output/E1/R0/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R0/iter1/clustalo_10_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.61user 0.49system 0:08.92elapsed 90%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17784outputs (0major+220458minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2..4/magus_200_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2..4/magus_200_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.64user 0.51system 0:08.85elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17784outputs (0major+219966minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2..4/magus_200_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2..4/magus_200_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.80user 0.51system 0:09.00elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17784outputs (0major+217685minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2..4/clustalo_200_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2..4/clustalo_200_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.77user 0.50system 0:08.96elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17800outputs (0major+218063minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2..4/clustalo_200_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2..4/clustalo_200_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1548436 --overwrite
+7.49user 0.49system 0:08.66elapsed 92%CPU (0avgtext+0avgdata 536576maxresident)k
+8128inputs+17792outputs (0major+218450minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+32minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2/magus_200_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_200_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2/magus_200_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_200_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/clustalo_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_200_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/clustalo_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_200_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_200_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_200_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_200_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_200_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_100_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_100_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_100_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_100_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -t /u/ianchen3/project/output/E1/R0/iter2/magus_100_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_100_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -t /u/ianchen3/project/output/E1/R0/iter2/magus_100_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_100_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/clustalo_100_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_100_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/clustalo_100_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_100_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_100_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_100_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_100_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_100_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+28minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_50_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_50_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_50_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_50_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -t /u/ianchen3/project/output/E1/R0/iter2/magus_50_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_50_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+32minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -t /u/ianchen3/project/output/E1/R0/iter2/magus_50_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_50_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/clustalo_50_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_50_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+28minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/clustalo_50_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_50_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_50_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_50_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_50_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_50_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_25_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_25_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_25_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_25_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter2/magus_25_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_25_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter2/magus_25_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_25_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/clustalo_25_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_25_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+28minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/clustalo_25_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_25_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_25_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_25_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_25_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_25_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+28minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_10_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_10_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+31minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_10_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_10_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -t /u/ianchen3/project/output/E1/R0/iter2/magus_10_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_10_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -t /u/ianchen3/project/output/E1/R0/iter2/magus_10_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/magus_10_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/clustalo_10_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_10_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+16outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/clustalo_10_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/clustalo_10_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_10_ft_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_10_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+29minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -t /u/ianchen3/project/output/E1/R0/iter2/clustalo_10_ftnoml_guide.tree -o /u/ianchen3/project/output/E1/R0/iter2/clustalo_10_ftnoml_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1552208 --overwrite
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+8outputs (0major+31minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ft_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 52%CPU (0avgtext+0avgdata 512maxresident)k
+0inputs+0outputs (0major+30minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ftnoml_guide.tree
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed 69%CPU (0avgtext+0avgdata 768maxresident)k
+0inputs+0outputs (0major+31minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ft_guide.tree
+Command exited with non-zero status 1
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 1280maxresident)k
+0inputs+0outputs (0major+80minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ftnoml_guide.tree
+Command exited with non-zero status 1
+0.00user 0.00system 0:00.00elapsed 71%CPU (0avgtext+0avgdata 1280maxresident)k
+0inputs+0outputs (0major+81minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ft_guide.tree
+Command exited with non-zero status 1
+0.00user 0.00system 0:00.00elapsed 73%CPU (0avgtext+0avgdata 1280maxresident)k
+0inputs+0outputs (0major+82minor)pagefaults 0swaps
+/u/ianchen3/methods/FastTree -nt -gtr -gamma -noml < /u/ianchen3/project/output/E1/R0/iter1/magus_200_aln.fasta > /u/ianchen3/project/output/E1/R0/iter2/magus_200_ftnoml_guide.tree
+Command exited with non-zero status 1
+0.00user 0.00system 0:00.00elapsed 67%CPU (0avgtext+0avgdata 1280maxresident)k
+0inputs+0outputs (0major+79minor)pagefaults 0swaps
