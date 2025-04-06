@@ -1,0 +1,689 @@
+2025-04-05 21:37:12    MAGUS was run with: /u/ianchen3/methods/magus -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E0/MagusAln.fasta
+2025-04-05 21:37:12    Running a task, output file: /u/ianchen3/project/output/E0/MagusAln.fasta
+2025-04-05 21:37:12    Aligning sequences /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta
+2025-04-05 21:37:12    Task for /u/ianchen3/project/output/E0/MagusAln.fasta threw an exception:
+[Errno 2] No such file or directory: '/u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta'
+2025-04-05 21:37:12    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 45, in runAlignmentTask
+    decomposeSequences(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/decompose/decomposer.py", line 44, in decomposeSequences
+    buildDecomposition(context, subsetsDir)
+  File "/u/ianchen3/methods/MAGUS/magus/align/decompose/decomposer.py", line 53, in buildDecomposition
+    context.unalignedSequences = sequenceutils.readFromFasta(context.sequencesPath, removeDashes=True)
+  File "/u/ianchen3/methods/MAGUS/magus/helpers/sequenceutils.py", line 19, in readFromFasta
+    with open(filePath) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta'
+
+2025-04-05 21:37:12    MAGUS aborted with an exception..
+2025-04-05 21:37:12    Task manager found a failed task: /u/ianchen3/project/output/E0/MagusAln.fasta
+2025-04-05 21:37:12    Traceback (most recent call last):
+  File "/u/ianchen3/methods/magus", line 37, in main
+    mainAlignmentTask()
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 30, in mainAlignmentTask
+    task.awaitTask()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 47, in awaitTask
+    awaitTasks([self])
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 53, in observeTaskManager
+    runTask(task)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 45, in runAlignmentTask
+    decomposeSequences(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/decompose/decomposer.py", line 44, in decomposeSequences
+    buildDecomposition(context, subsetsDir)
+  File "/u/ianchen3/methods/MAGUS/magus/align/decompose/decomposer.py", line 53, in buildDecomposition
+    context.unalignedSequences = sequenceutils.readFromFasta(context.sequencesPath, removeDashes=True)
+  File "/u/ianchen3/methods/MAGUS/magus/helpers/sequenceutils.py", line 19, in readFromFasta
+    with open(filePath) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta'
+
+2025-04-05 21:37:12    Waiting for 0 tasks to finish..
+2025-04-05 21:37:12    MAGUS finished in 0.05981111526489258 seconds..
+2025-04-05 21:38:27    MAGUS was run with: /u/ianchen3/methods/magus -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E0/MagusAln.fasta
+2025-04-05 21:38:27    Running a task, output file: /u/ianchen3/project/output/E0/MagusAln.fasta
+2025-04-05 21:38:27    Aligning sequences /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta
+2025-04-05 21:38:27    Building PASTA-style FastTree initial tree on /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta with skeleton size 300..
+2025-04-05 21:38:27    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+2025-04-05 21:38:27    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_sequences.txt > /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/temp_initial_align.txt
+2025-04-05 21:53:25    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+2025-04-05 21:53:25    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+2025-04-05 21:53:25    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/hmmer/hmmbuild --ere 0.59 --cpu 1 --symfrac 0.0 --informat afa /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/temp_hmm_model.txt /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+2025-04-05 21:53:25    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+2025-04-05 21:53:25    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+2025-04-05 21:53:25    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/hmmer/hmmalign -o /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/temp_queries_chunk_1_aligned.txt /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/hmm_model.txt /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/queries_chunk_1.txt
+2025-04-05 21:53:38    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+2025-04-05 21:53:38    Data type wasn't specified. Inferred data type DNA from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+2025-04-05 21:53:38    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_tree.tre
+2025-04-05 21:53:38    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/fasttree/FastTreeMP -nt -gtr -fastest -nosupport /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt > /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/temp_initial_tree.tre
+2025-04-05 21:54:36    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_tree.tre
+2025-04-05 21:54:36    Built initial tree on /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta in 968.3094668388367 sec..
+2025-04-05 21:54:36    Using target subset size of 50, and maximum number of subsets 25..
+2025-04-05 21:54:36    Decomposing a tree with 1000 leaves into 591 and 409..
+2025-04-05 21:54:36    Decomposing a tree with 591 leaves into 310 and 281..
+2025-04-05 21:54:36    Decomposing a tree with 409 leaves into 193 and 216..
+2025-04-05 21:54:36    Decomposing a tree with 310 leaves into 137 and 173..
+2025-04-05 21:54:36    Decomposing a tree with 281 leaves into 149 and 132..
+2025-04-05 21:54:36    Decomposing a tree with 216 leaves into 116 and 100..
+2025-04-05 21:54:36    Decomposing a tree with 193 leaves into 107 and 86..
+2025-04-05 21:54:36    Decomposing a tree with 173 leaves into 96 and 77..
+2025-04-05 21:54:36    Decomposing a tree with 149 leaves into 73 and 76..
+2025-04-05 21:54:36    Decomposing a tree with 137 leaves into 50 and 87..
+2025-04-05 21:54:36    Decomposing a tree with 132 leaves into 69 and 63..
+2025-04-05 21:54:36    Decomposing a tree with 116 leaves into 55 and 61..
+2025-04-05 21:54:36    Decomposing a tree with 107 leaves into 63 and 44..
+2025-04-05 21:54:36    Decomposing a tree with 100 leaves into 49 and 51..
+2025-04-05 21:54:36    Decomposing a tree with 96 leaves into 59 and 37..
+2025-04-05 21:54:36    Decomposing a tree with 87 leaves into 38 and 49..
+2025-04-05 21:54:36    Decomposing a tree with 86 leaves into 35 and 51..
+2025-04-05 21:54:36    Decomposing a tree with 77 leaves into 34 and 43..
+2025-04-05 21:54:36    Decomposing a tree with 76 leaves into 34 and 42..
+2025-04-05 21:54:36    Decomposing a tree with 73 leaves into 35 and 38..
+2025-04-05 21:54:36    Decomposing a tree with 69 leaves into 30 and 39..
+2025-04-05 21:54:36    Decomposing a tree with 63 leaves into 33 and 30..
+2025-04-05 21:54:36    Decomposing a tree with 63 leaves into 33 and 30..
+2025-04-05 21:54:36    Decomposing a tree with 61 leaves into 35 and 26..
+2025-04-05 21:54:36    Decomposed /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta into 25 subsets in 968.5069096088409 sec..
+2025-04-05 21:54:36    Building 25 subalignments..
+2025-04-05 21:54:36    Subset has 50/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 55/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 44/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 49/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 51/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 59/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 37/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 38/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 49/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 35/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 51/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 34/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 43/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 34/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 42/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 35/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 38/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 30/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 39/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 33/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 30/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 33/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 30/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 35/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Subset has 26/200 sequences, aligning with MAFFT..
+2025-04-05 21:54:36    Prepared 25 subset alignment tasks..
+2025-04-05 21:54:36    Merging 25 subaligments..
+2025-04-05 21:54:36    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_4.txt
+2025-04-05 21:54:36    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_4.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_4.txt
+2025-04-05 21:54:36    Using 10 MAFFT backbones..
+2025-04-05 21:54:36    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt
+2025-04-05 21:54:36    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt
+2025-04-05 21:54:41    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_12.txt
+2025-04-05 21:54:41    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_12.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_12.txt
+2025-04-05 21:54:46    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt
+2025-04-05 21:54:46    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt
+2025-04-05 21:54:52    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_6.txt
+2025-04-05 21:54:52    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_6.txt
+2025-04-05 21:54:56    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_2.txt
+2025-04-05 21:54:56    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_2.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_2.txt
+2025-04-05 21:55:01    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt
+2025-04-05 21:55:01    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_1_mafft.txt
+2025-04-05 21:55:06    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_3.txt
+2025-04-05 21:55:06    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_3.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_3.txt
+2025-04-05 21:55:12    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_9.txt
+2025-04-05 21:55:12    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_9.txt
+2025-04-05 21:55:16    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt
+2025-04-05 21:55:16    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_4_mafft.txt
+2025-04-05 21:55:22    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt
+2025-04-05 21:55:22    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt
+2025-04-05 21:55:28    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt
+2025-04-05 21:55:28    Exit code: 1
+2025-04-05 21:55:28    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1594693 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 21:55:28    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt' returned non-zero exit status 1.
+2025-04-05 21:55:28    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 21:55:36    Task manager found a failed task: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt
+2025-04-05 21:55:36    Task manager is dead for some reason..
+2025-04-05 21:55:36    Task for /u/ianchen3/project/output/E0/MagusAln.fasta threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt' returned non-zero exit status 1.
+2025-04-05 21:55:36    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt
+2025-04-05 21:55:36    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_10_mafft.txt
+2025-04-05 21:55:36    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 52, in runAlignmentTask
+    mergeSubalignments(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/merger.py", line 23, in mergeSubalignments
+    buildGraph(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/graph_build/graph_builder.py", line 37, in buildGraph
+    context.awaitSubalignments()
+  File "/u/ianchen3/methods/MAGUS/magus/align/alignment_context.py", line 52, in awaitSubalignments
+    task.awaitTasks(self.subalignmentTasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 50, in observeTaskManager
+    checkTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 60, in checkTaskManager
+    TaskManager.managerFuture.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 83, in runTaskManager
+    dealWithErrors()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 96, in dealWithErrors
+    task.future.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 21:55:36    MAGUS aborted with an exception..
+2025-04-05 21:55:36    Traceback (most recent call last):
+  File "/u/ianchen3/methods/magus", line 37, in main
+    mainAlignmentTask()
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 30, in mainAlignmentTask
+    task.awaitTask()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 47, in awaitTask
+    awaitTasks([self])
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 53, in observeTaskManager
+    runTask(task)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 52, in runAlignmentTask
+    mergeSubalignments(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/merger.py", line 23, in mergeSubalignments
+    buildGraph(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/graph_build/graph_builder.py", line 37, in buildGraph
+    context.awaitSubalignments()
+  File "/u/ianchen3/methods/MAGUS/magus/align/alignment_context.py", line 52, in awaitSubalignments
+    task.awaitTasks(self.subalignmentTasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 50, in observeTaskManager
+    checkTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 60, in checkTaskManager
+    TaskManager.managerFuture.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 83, in runTaskManager
+    dealWithErrors()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 96, in dealWithErrors
+    task.future.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 21:55:36    Waiting for 11 tasks to finish..
+2025-04-05 21:55:36    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt
+2025-04-05 21:55:36    Exit code: 1
+2025-04-05 21:55:36    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1598825 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 21:55:36    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt' returned non-zero exit status 1.
+2025-04-05 21:55:36    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 21:55:50    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_4_mafft.txt
+2025-04-05 21:55:50    Exit code: 1
+2025-04-05 21:55:50    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1599595 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 21:55:50    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_4_mafft.txt' returned non-zero exit status 1.
+2025-04-05 21:55:50    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_4_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 21:56:30    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_9.txt
+2025-04-05 21:56:30    Exit code: 1
+2025-04-05 21:56:30    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1599467 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 21:56:30    Task for /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_9.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_9.txt' returned non-zero exit status 1.
+2025-04-05 21:56:30    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_9.txt' returned non-zero exit status 1.
+
+2025-04-05 21:56:31    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_6.txt
+2025-04-05 21:56:31    Exit code: 1
+2025-04-05 21:56:31    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1598953 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 21:56:31    Task for /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_6.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_6.txt' returned non-zero exit status 1.
+2025-04-05 21:56:31    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_6.txt' returned non-zero exit status 1.
+
+2025-04-05 21:56:54    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_4.txt
+2025-04-05 21:56:59    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt
+2025-04-05 21:56:59    Exit code: 1
+2025-04-05 21:56:59    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1599755 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 21:56:59    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt' returned non-zero exit status 1.
+2025-04-05 21:56:59    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 21:57:00    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_10_mafft.txt
+2025-04-05 21:57:00    Exit code: 1
+2025-04-05 21:57:00    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1603343 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 21:57:00    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_10_mafft.txt' returned non-zero exit status 1.
+2025-04-05 21:57:00    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_10_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 21:57:06    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_12.txt
+2025-04-05 21:58:58    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_3.txt
+2025-04-05 22:00:53    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_2.txt
+2025-04-05 22:04:34    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt
+2025-04-05 22:19:08    MAGUS was run with: /u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E0/MagusAln.fasta
+2025-04-05 22:19:08    Running a task, output file: /u/ianchen3/project/output/E0/MagusAln.fasta
+2025-04-05 22:19:08    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt
+2025-04-05 22:19:08    Aligning sequences /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta
+2025-04-05 22:19:08    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_1.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_2.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_3.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_4.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_5.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_7.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_8.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_10.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_11.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_12.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_13.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_14.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_15.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_16.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_17.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_18.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_19.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_20.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_21.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_22.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_23.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_24.txt
+2025-04-05 22:19:08    Detected existing subset file /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_25.txt
+2025-04-05 22:19:08    Decomposed /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta into 25 subsets in 0.03046703338623047 sec..
+2025-04-05 22:19:08    Building 25 subalignments..
+2025-04-05 22:19:08    Subset has 50/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Existing subalignment file detected: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_2.txt
+2025-04-05 22:19:08    Existing subalignment file detected: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_3.txt
+2025-04-05 22:19:08    Existing subalignment file detected: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_4.txt
+2025-04-05 22:19:08    Subset has 51/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 59/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 37/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 38/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 49/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 35/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 51/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Existing subalignment file detected: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_12.txt
+2025-04-05 22:19:08    Subset has 43/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 34/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 42/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 35/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 38/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 30/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 39/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 33/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 30/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 33/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 30/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 35/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Subset has 26/200 sequences, aligning with MAFFT..
+2025-04-05 22:19:08    Prepared 21 subset alignment tasks..
+2025-04-05 22:19:08    Merging 25 subaligments..
+2025-04-05 22:19:08    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_25.txt
+2025-04-05 22:19:08    Using 10 MAFFT backbones..
+2025-04-05 22:19:08    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_25.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_25.txt
+2025-04-05 22:19:08    Existing backbone file found: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt
+2025-04-05 22:19:08    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt
+2025-04-05 22:19:08    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt
+2025-04-05 22:19:13    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt
+2025-04-05 22:19:13    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_5_mafft.txt
+2025-04-05 22:19:19    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_11.txt
+2025-04-05 22:19:19    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_11.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_11.txt
+2025-04-05 22:19:24    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt
+2025-04-05 22:19:24    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_2_mafft.txt
+2025-04-05 22:19:29    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt
+2025-04-05 22:19:29    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_9_mafft.txt
+2025-04-05 22:19:34    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt
+2025-04-05 22:19:34    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt
+2025-04-05 22:19:39    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt
+2025-04-05 22:19:39    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_5_mafft.txt
+2025-04-05 22:19:44    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt
+2025-04-05 22:19:44    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt
+2025-04-05 22:19:49    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt
+2025-04-05 22:19:49    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt
+2025-04-05 22:19:54    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_5.txt
+2025-04-05 22:19:54    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_5.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_5.txt
+2025-04-05 22:19:59    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_1.txt
+2025-04-05 22:19:59    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_1.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_1.txt
+2025-04-05 22:20:08    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt
+2025-04-05 22:20:08    Exit code: 1
+2025-04-05 22:20:08    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1681124 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:20:08    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:20:08    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:20:08    Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt
+2025-04-05 22:20:08    Task manager found a failed task: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt
+2025-04-05 22:20:08    Task manager is dead for some reason..
+2025-04-05 22:20:08    Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_9_mafft.txt
+2025-04-05 22:20:08    Task for /u/ianchen3/project/output/E0/MagusAln.fasta threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:20:08    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 52, in runAlignmentTask
+    mergeSubalignments(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/merger.py", line 23, in mergeSubalignments
+    buildGraph(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/graph_build/graph_builder.py", line 37, in buildGraph
+    context.awaitSubalignments()
+  File "/u/ianchen3/methods/MAGUS/magus/align/alignment_context.py", line 52, in awaitSubalignments
+    task.awaitTasks(self.subalignmentTasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 50, in observeTaskManager
+    checkTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 60, in checkTaskManager
+    TaskManager.managerFuture.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 83, in runTaskManager
+    dealWithErrors()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 96, in dealWithErrors
+    task.future.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:20:08    MAGUS aborted with an exception..
+2025-04-05 22:20:08    Traceback (most recent call last):
+  File "/u/ianchen3/methods/magus", line 37, in main
+    mainAlignmentTask()
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 30, in mainAlignmentTask
+    task.awaitTask()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 47, in awaitTask
+    awaitTasks([self])
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 53, in observeTaskManager
+    runTask(task)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/align/aligner.py", line 52, in runAlignmentTask
+    mergeSubalignments(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/merger.py", line 23, in mergeSubalignments
+    buildGraph(context)
+  File "/u/ianchen3/methods/MAGUS/magus/align/merge/graph_build/graph_builder.py", line 37, in buildGraph
+    context.awaitSubalignments()
+  File "/u/ianchen3/methods/MAGUS/magus/align/alignment_context.py", line 52, in awaitSubalignments
+    task.awaitTasks(self.subalignmentTasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 94, in awaitTasks
+    controller.awaitTasks(tasks)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 34, in awaitTasks
+    observeTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 50, in observeTaskManager
+    checkTaskManager()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/controller.py", line 60, in checkTaskManager
+    TaskManager.managerFuture.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 83, in runTaskManager
+    dealWithErrors()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 96, in dealWithErrors
+    task.future.result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/usr/lib64/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/manager.py", line 220, in runTask
+    task.run()
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:20:08    Waiting for 10 tasks to finish..
+2025-04-05 22:20:22    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_5_mafft.txt
+2025-04-05 22:20:22    Exit code: 1
+2025-04-05 22:20:22    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1681727 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:20:22    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_5_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:20:22    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_5_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:20:23    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_25.txt
+2025-04-05 22:20:41    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt
+2025-04-05 22:20:41    Exit code: 1
+2025-04-05 22:20:41    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1680769 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:20:41    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:20:41    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:21:00    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_2_mafft.txt
+2025-04-05 22:21:00    Exit code: 1
+2025-04-05 22:21:00    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1685649 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:21:00    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_2_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:21:00    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_2_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:21:22    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_9_mafft.txt
+2025-04-05 22:21:22    Exit code: 1
+2025-04-05 22:21:22    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1685867 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:21:22    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_9_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:21:22    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_9_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:21:31    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt
+2025-04-05 22:21:31    Exit code: 1
+2025-04-05 22:21:31    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1686356 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:21:31    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:21:31    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:21:51    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt
+2025-04-05 22:21:51    Exit code: 1
+2025-04-05 22:21:51    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1686084 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:21:51    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:21:51    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:23:18    Command encountered error: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt
+2025-04-05 22:23:18    Exit code: 1
+2025-04-05 22:23:18    Output: /u/ianchen3/methods/MAGUS/magus/tools/mafft/mafftdir/bin/mafft: line 2719: 1689811 Killed                  "$prefix/tbfast" _ -u $unalignlevel $localparam -C $numthreads $seqtype $model -g $lexp -f $lgop -Q $spfactor -h $laof -L $usenaivepairscore $focusarg _ -+ $iterate -W $minimumweight -V "-"$gopdist -s $unalignlevel $legacygapopt $mergearg $termgapopt $outnum $addarg $add2ndhalfarg -C $numthreadstb $rnaopt $weightopt $treeinopt $treeoutopt $distoutopt $seqtype $model -f "-"$gop -Q $spfactor -h $aof $param_fft $localparam $algopt $treealg $scoreoutarg $focusarg < infile > /dev/null 2>> "$progressfile"
+
+2025-04-05 22:23:18    Task for /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt threw an exception:
+Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt' returned non-zero exit status 1.
+2025-04-05 22:23:18    Traceback (most recent call last):
+  File "/u/ianchen3/methods/MAGUS/magus/tasks/task.py", line 59, in run
+    func(**self.taskArgs)
+  File "/u/ianchen3/methods/MAGUS/magus/tools/external_tools.py", line 19, in runCommand
+    runner.check_returncode()
+  File "/usr/lib64/python3.9/subprocess.py", line 460, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '/u/ianchen3/methods/MAGUS/magus/tools/mafft/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 64 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt' returned non-zero exit status 1.
+
+2025-04-05 22:23:31    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_11.txt
+2025-04-05 22:25:09    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_5.txt
+2025-04-05 22:26:06    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_1.txt
+2025-04-05 22:34:13    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt
+2025-04-05 22:36:03    Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt

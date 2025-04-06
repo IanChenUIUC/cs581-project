@@ -1,16 +1,19 @@
 # Running Commands:
 
 ## FastTree
-	~/methods/FastTree -nt -gtr -gamma [<alignment>] > [<tree-file>]
+	~/methods/FastTree -nt -gtr -gamma < [<fasta-aln>] > [<tree-file>]
 
 ## FastTree (no ML)
-	~/methods/FastTree -nt -noml -gtr -gamma [<alignment>] > [<tree-file>]
+	~/methods/FastTree -nt -noml -gtr -gamma < [<fasta-aln>] > [<tree-file>]
 
 ## MAFFT PartTree
-	~/methods/mafft --help
+	~/methods/mafft --retree 0 --treeout --parttree [<fasta-aln>] > [<tree-file>]
+
+## Clustal Omega Guide Tree
+	~/methods/clustalo --max-hmm-iterations=-1 -i [<fasta-aln>] --guidetree-out=[<tree-file>]
 
 ## MAGUS
-	~/methods/magus --help
+	~/methods/magus -i [<unaligned-fasta>] -o [<output-fasta>]
 
 # Analysis Commands:
 
@@ -63,3 +66,14 @@ I installed FastTree v2.1.11 by running `wget` on the [Linux 64-bit executable (
 
 ## FastSP
 I installed FastSP v1.7.1 by running `wget` on the [jar file](https://github.com/smirarab/FastSP/blob/master/FastSP.jar)
+
+## ClustalOmega
+I installed ClustalOmega v1.2.4 by running `wget` on the [linux standalone precompiled binary](http://www.clustal.org/omega/).
+
+# Other Notes
+
+## Unaligned Files for ROSE and RNASim
+To get the unaligned files, we have to remove all '-' characters in the file.
+
+## Commands for MAFFT PartTree
+The command is internal in the [MAGUS source](https://github.com/vlasmirnov/MAGUS/blob/master/magus/tools/external_tools.py).
