@@ -1,0 +1,1095 @@
+MAGUS was run with: /u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E0/MagusAln.fasta
+Running a task, output file: /u/ianchen3/project/output/E0/MagusAln.fasta
+Aligning sequences /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta
+Read 1000 sequences from /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta ..
+Building PASTA-style FastTree initial tree on /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta with skeleton size 300..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_sequences.txt > /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/temp_initial_align.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/hmmer/hmmbuild --ere 0.59 --cpu 1 --symfrac 0.0 --informat afa /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/temp_hmm_model.txt /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/hmm_model.txt
+Read 700 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/queries.txt ..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/hmmer/hmmalign -o /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/temp_queries_chunk_1_aligned.txt /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/skeleton_hmm/hmm_model.txt /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/queries_chunk_1.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/chunks_queries/queries_chunk_1_aligned.txt
+Read 1000 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt ..
+Found 100% ACGT-N, assuming DNA..
+Data type wasn't specified. Inferred data type DNA from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_tree.tre
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/fasttree/FastTreeMP -nt -gtr -fastest -nosupport /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_align.txt > /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/temp_initial_tree.tre
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/decomposition/initial_tree/initial_tree.tre
+Built initial tree on /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta in 114.0909035205841 sec..
+Using target subset size of 50, and maximum number of subsets 25..
+Read 1000 sequences from /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta ..
+Decomposing a tree with 1000 leaves into 595 and 405..
+Decomposing a tree with 595 leaves into 314 and 281..
+Decomposing a tree with 405 leaves into 191 and 214..
+Decomposing a tree with 314 leaves into 177 and 137..
+Decomposing a tree with 281 leaves into 149 and 132..
+Decomposing a tree with 214 leaves into 114 and 100..
+Decomposing a tree with 191 leaves into 105 and 86..
+Decomposing a tree with 177 leaves into 81 and 96..
+Decomposing a tree with 149 leaves into 74 and 75..
+Decomposing a tree with 137 leaves into 50 and 87..
+Decomposing a tree with 132 leaves into 69 and 63..
+Decomposing a tree with 114 leaves into 53 and 61..
+Decomposing a tree with 105 leaves into 61 and 44..
+Decomposing a tree with 100 leaves into 49 and 51..
+Decomposing a tree with 96 leaves into 50 and 46..
+Decomposing a tree with 87 leaves into 38 and 49..
+Decomposing a tree with 86 leaves into 35 and 51..
+Decomposing a tree with 81 leaves into 43 and 38..
+Decomposing a tree with 75 leaves into 34 and 41..
+Decomposing a tree with 74 leaves into 36 and 38..
+Decomposing a tree with 69 leaves into 30 and 39..
+Decomposing a tree with 63 leaves into 33 and 30..
+Decomposing a tree with 61 leaves into 35 and 26..
+Decomposing a tree with 61 leaves into 31 and 30..
+Decomposed /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta into 25 subsets in 114.31112313270569 sec..
+Building 25 subalignments..
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_1.txt ..
+Subset has 50/200 sequences, aligning with MAFFT..
+Read 53 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_2.txt ..
+Subset has 53/200 sequences, aligning with MAFFT..
+Read 44 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_3.txt ..
+Subset has 44/200 sequences, aligning with MAFFT..
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_4.txt ..
+Subset has 49/200 sequences, aligning with MAFFT..
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_5.txt ..
+Subset has 51/200 sequences, aligning with MAFFT..
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt ..
+Subset has 50/200 sequences, aligning with MAFFT..
+Read 46 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_7.txt ..
+Subset has 46/200 sequences, aligning with MAFFT..
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_8.txt ..
+Subset has 38/200 sequences, aligning with MAFFT..
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt ..
+Subset has 49/200 sequences, aligning with MAFFT..
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_10.txt ..
+Subset has 35/200 sequences, aligning with MAFFT..
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_11.txt ..
+Subset has 51/200 sequences, aligning with MAFFT..
+Read 43 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_12.txt ..
+Subset has 43/200 sequences, aligning with MAFFT..
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_13.txt ..
+Subset has 38/200 sequences, aligning with MAFFT..
+Read 34 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_14.txt ..
+Subset has 34/200 sequences, aligning with MAFFT..
+Read 41 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_15.txt ..
+Subset has 41/200 sequences, aligning with MAFFT..
+Read 36 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_16.txt ..
+Subset has 36/200 sequences, aligning with MAFFT..
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_17.txt ..
+Subset has 38/200 sequences, aligning with MAFFT..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_18.txt ..
+Subset has 30/200 sequences, aligning with MAFFT..
+Read 39 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_19.txt ..
+Subset has 39/200 sequences, aligning with MAFFT..
+Read 33 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_20.txt ..
+Subset has 33/200 sequences, aligning with MAFFT..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_21.txt ..
+Subset has 30/200 sequences, aligning with MAFFT..
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_22.txt ..
+Subset has 35/200 sequences, aligning with MAFFT..
+Read 26 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_23.txt ..
+Subset has 26/200 sequences, aligning with MAFFT..
+Read 31 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_24.txt ..
+Subset has 31/200 sequences, aligning with MAFFT..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_25.txt ..
+Subset has 30/200 sequences, aligning with MAFFT..
+Prepared 25 subset alignment tasks..
+Merging 25 subaligments..
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_1.txt ..
+Read 53 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_2.txt ..
+Read 44 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_3.txt ..
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_4.txt ..
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_5.txt ..
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt ..
+Read 46 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_7.txt ..
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_8.txt ..
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt ..
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_10.txt ..
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_11.txt ..
+Read 43 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_12.txt ..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_4.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_13.txt ..
+Read 34 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_14.txt ..
+Read 41 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_15.txt ..
+Read 36 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_16.txt ..
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_4.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_4.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_17.txt ..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_18.txt ..
+Read 39 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_19.txt ..
+Read 33 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_20.txt ..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_21.txt ..
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_22.txt ..
+Read 26 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_23.txt ..
+Read 31 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_24.txt ..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_25.txt ..
+Using 10 MAFFT backbones..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_6_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_20.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_20.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_20.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_9_mafft.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_4.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_10.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_10.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_10.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_4_mafft.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_20.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_8_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_10_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_5_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_7_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_1_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_7.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_7.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_7.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_19.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_19.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_19.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_3_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_25.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_25.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_25.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_8.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_8.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_8.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_18.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_18.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_18.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_9.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_9.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_9.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_unalign.txt > /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_backbone_2_mafft.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_13.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_13.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_13.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_2.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_2.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_2.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_23.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_23.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_23.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_3.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_3.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_3.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_7.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_12.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_12.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_12.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_17.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_17.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_17.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_16.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_16.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_16.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_14.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_14.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_14.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_18.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_15.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_15.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_15.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_24.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_24.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_24.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_1.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_1.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_1.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_8.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_22.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_22.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_22.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_5.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_5.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_5.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_6.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_6.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_6.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_23.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_11.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_11.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_11.txt
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_21.txt
+Running an external tool, command: /u/ianchen3/methods/mafft --localpair --maxiterate 1000 --ep 0.123 --quiet --thread 128 --anysymbol /u/ianchen3/project/output/E0/magus_working_dir/decomposition/subset_21.txt > /u/ianchen3/project/output/E0/magus_working_dir/subalignments/temp_subalignment_subset_21.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_9.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_17.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_25.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_14.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_13.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_12.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_15.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_16.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_22.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_5.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_24.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_10.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_1.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_3.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_2.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_11.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_6.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_19.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_21.txt
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_1.txt ..
+Read 53 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_2.txt ..
+Read 44 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_3.txt ..
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_4.txt ..
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_5.txt ..
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_6.txt ..
+Read 46 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_7.txt ..
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_8.txt ..
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_9.txt ..
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_10.txt ..
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_11.txt ..
+Read 43 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_12.txt ..
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_13.txt ..
+Read 34 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_14.txt ..
+Read 41 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_15.txt ..
+Read 36 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_16.txt ..
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_17.txt ..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_18.txt ..
+Read 39 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_19.txt ..
+Read 33 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_20.txt ..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_21.txt ..
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_22.txt ..
+Read 26 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_23.txt ..
+Read 31 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_24.txt ..
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_25.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_9_mafft.txt to the graph.
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_4_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_3_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_1_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_8_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_10_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_2_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_6_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_7_mafft.txt to the graph.
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt
+Feeding backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt to the graph..
+Read 200 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt ..
+Constructed backbone alignment map from /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt
+Fed backbone /u/ianchen3/project/output/E0/magus_working_dir/graph/backbone_5_mafft.txt to the graph.
+Wrote matrix to /u/ianchen3/project/output/E0/magus_working_dir/graph/graph.txt
+Built the alignment graph in 344.0285985469818 sec..
+Running MCL alignment graph clustering..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/clusters.txt
+Running an external tool, command: /u/ianchen3/methods/MAGUS/magus/tools/mcl/mcl /u/ianchen3/project/output/E0/magus_working_dir/graph/graph.txt --abc -o /u/ianchen3/project/output/E0/magus_working_dir/graph/temp_clusters.txt -I 4
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/clusters.txt
+Found 1008 clusters..
+Clustered the graph in 18.228842973709106 sec..
+Purged duplicate clusters. Found 1008 unique clusters..
+Found 0 row violations and 2243 column violations..
+Finished violations sweep. Now 0 row violations and 0 column violations..
+Purged cluster violations. Found 1008 clean clusters..
+Finding graph trace with minimum clusters heuristic search..
+Reached new search frontier
+{0: 52, 1: 52, 2: 52, 3: 52, 4: 52, 5: 52, 6: 52, 7: 51, 8: 52, 9: 49, 10: 52, 11: 52, 12: 52, 13: 52, 14: 52, 15: 51, 16: 52, 17: 52, 18: 52, 19: 52, 20: 52, 21: 52, 22: 52, 23: 52, 24: 52}
+Safe frontier reached.. dumping 0 from heap and resetting aggression..
+Reached new search frontier
+{0: 54, 1: 54, 2: 54, 3: 54, 4: 54, 5: 54, 6: 54, 7: 53, 8: 54, 9: 51, 10: 54, 11: 54, 12: 54, 13: 54, 14: 54, 15: 53, 16: 54, 17: 54, 18: 54, 19: 54, 20: 54, 21: 54, 22: 54, 23: 54, 24: 54}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 56, 1: 56, 2: 56, 3: 56, 4: 56, 5: 56, 6: 56, 7: 55, 8: 56, 9: 53, 10: 56, 11: 56, 12: 56, 13: 56, 14: 56, 15: 55, 16: 56, 17: 56, 18: 56, 19: 56, 20: 56, 21: 56, 22: 56, 23: 56, 24: 56}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 87, 1: 87, 2: 87, 3: 87, 4: 87, 5: 87, 6: 87, 7: 86, 8: 87, 9: 84, 10: 87, 11: 87, 12: 87, 13: 87, 14: 87, 15: 86, 16: 87, 17: 87, 18: 87, 19: 87, 20: 87, 21: 87, 22: 87, 23: 85, 24: 87}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 88, 1: 88, 2: 88, 3: 88, 4: 88, 5: 88, 6: 88, 7: 87, 8: 88, 9: 85, 10: 88, 11: 88, 12: 88, 13: 88, 14: 88, 15: 87, 16: 88, 17: 88, 18: 88, 19: 88, 20: 88, 21: 88, 22: 88, 23: 86, 24: 88}
+Reached new search frontier
+{0: 89, 1: 89, 2: 89, 3: 89, 4: 89, 5: 89, 6: 89, 7: 88, 8: 89, 9: 86, 10: 89, 11: 89, 12: 89, 13: 89, 14: 89, 15: 88, 16: 89, 17: 89, 18: 89, 19: 89, 20: 89, 21: 89, 22: 89, 23: 87, 24: 89}
+Reached new search frontier
+{0: 140, 1: 140, 2: 140, 3: 140, 4: 140, 5: 140, 6: 140, 7: 139, 8: 140, 9: 137, 10: 140, 11: 140, 12: 140, 13: 140, 14: 140, 15: 139, 16: 140, 17: 140, 18: 140, 19: 140, 20: 140, 21: 140, 22: 140, 23: 130, 24: 140}
+Safe frontier reached.. dumping 9 from heap and resetting aggression..
+Reached new search frontier
+{0: 211, 1: 211, 2: 211, 3: 211, 4: 211, 5: 211, 6: 212, 7: 210, 8: 212, 9: 207, 10: 211, 11: 211, 12: 211, 13: 212, 14: 212, 15: 211, 16: 210, 17: 212, 18: 211, 19: 211, 20: 211, 21: 209, 22: 207, 23: 201, 24: 211}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 212, 1: 212, 2: 212, 3: 212, 4: 212, 5: 212, 6: 213, 7: 211, 8: 213, 9: 208, 10: 212, 11: 212, 12: 212, 13: 213, 14: 213, 15: 212, 16: 211, 17: 215, 18: 212, 19: 212, 20: 212, 21: 210, 22: 208, 23: 202, 24: 212}
+Reached new search frontier
+{0: 213, 1: 213, 2: 213, 3: 213, 4: 213, 5: 213, 6: 214, 7: 212, 8: 214, 9: 209, 10: 213, 11: 213, 12: 213, 13: 214, 14: 214, 15: 213, 16: 212, 17: 217, 18: 214, 19: 215, 20: 214, 21: 211, 22: 209, 23: 203, 24: 213}
+Reached new search frontier
+{0: 217, 1: 217, 2: 217, 3: 217, 4: 217, 5: 217, 6: 218, 7: 216, 8: 218, 9: 213, 10: 217, 11: 217, 12: 217, 13: 216, 14: 217, 15: 215, 16: 214, 17: 219, 18: 216, 19: 217, 20: 216, 21: 215, 22: 213, 23: 207, 24: 217}
+Reached new search frontier
+{0: 221, 1: 221, 2: 221, 3: 221, 4: 221, 5: 221, 6: 222, 7: 220, 8: 222, 9: 217, 10: 221, 11: 221, 12: 221, 13: 221, 14: 222, 15: 218, 16: 217, 17: 222, 18: 219, 19: 220, 20: 222, 21: 219, 22: 217, 23: 211, 24: 221}
+Safe frontier reached.. dumping 62 from heap and resetting aggression..
+Reached new search frontier
+{0: 225, 1: 225, 2: 225, 3: 225, 4: 225, 5: 225, 6: 226, 7: 224, 8: 226, 9: 221, 10: 225, 11: 225, 12: 225, 13: 225, 14: 226, 15: 222, 16: 220, 17: 225, 18: 222, 19: 223, 20: 225, 21: 224, 22: 221, 23: 215, 24: 225}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 316, 1: 316, 2: 316, 3: 314, 4: 312, 5: 316, 6: 317, 7: 315, 8: 317, 9: 302, 10: 316, 11: 316, 12: 316, 13: 316, 14: 318, 15: 313, 16: 312, 17: 317, 18: 314, 19: 315, 20: 317, 21: 312, 22: 312, 23: 306, 24: 316}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 387, 1: 387, 2: 387, 3: 384, 4: 383, 5: 386, 6: 387, 7: 386, 8: 388, 9: 369, 10: 381, 11: 387, 12: 387, 13: 387, 14: 389, 15: 377, 16: 383, 17: 387, 18: 384, 19: 385, 20: 387, 21: 383, 22: 383, 23: 377, 24: 384}
+Safe frontier reached.. dumping 3 from heap and resetting aggression..
+Reached new search frontier
+{0: 388, 1: 388, 2: 388, 3: 385, 4: 384, 5: 387, 6: 388, 7: 387, 8: 389, 9: 370, 10: 382, 11: 388, 12: 388, 13: 388, 14: 390, 15: 378, 16: 384, 17: 388, 18: 385, 19: 386, 20: 388, 21: 384, 22: 384, 23: 378, 24: 385}
+Reached new search frontier
+{0: 389, 1: 389, 2: 389, 3: 386, 4: 385, 5: 388, 6: 389, 7: 388, 8: 390, 9: 371, 10: 383, 11: 389, 12: 389, 13: 389, 14: 391, 15: 379, 16: 385, 17: 389, 18: 386, 19: 387, 20: 389, 21: 385, 22: 385, 23: 379, 24: 386}
+Reached new search frontier
+{0: 390, 1: 390, 2: 390, 3: 387, 4: 386, 5: 389, 6: 390, 7: 389, 8: 391, 9: 372, 10: 384, 11: 390, 12: 390, 13: 390, 14: 392, 15: 380, 16: 386, 17: 390, 18: 387, 19: 388, 20: 390, 21: 386, 22: 386, 23: 380, 24: 387}
+Reached new search frontier
+{0: 411, 1: 411, 2: 411, 3: 408, 4: 407, 5: 410, 6: 411, 7: 410, 8: 412, 9: 393, 10: 405, 11: 411, 12: 411, 13: 411, 14: 413, 15: 401, 16: 407, 17: 411, 18: 408, 19: 409, 20: 411, 21: 407, 22: 407, 23: 401, 24: 408}
+Safe frontier reached.. dumping 13 from heap and resetting aggression..
+Reached new search frontier
+{0: 470, 1: 470, 2: 470, 3: 467, 4: 466, 5: 469, 6: 470, 7: 469, 8: 471, 9: 452, 10: 464, 11: 469, 12: 469, 13: 470, 14: 472, 15: 458, 16: 466, 17: 470, 18: 467, 19: 468, 20: 470, 21: 466, 22: 466, 23: 460, 24: 467}
+Safe frontier reached.. dumping 3 from heap and resetting aggression..
+Reached new search frontier
+{0: 472, 1: 472, 2: 472, 3: 469, 4: 468, 5: 471, 6: 472, 7: 471, 8: 473, 9: 454, 10: 466, 11: 471, 12: 471, 13: 472, 14: 474, 15: 460, 16: 468, 17: 472, 18: 469, 19: 470, 20: 472, 21: 468, 22: 468, 23: 462, 24: 469}
+Safe frontier reached.. dumping 1 from heap and resetting aggression..
+Reached new search frontier
+{0: 475, 1: 475, 2: 475, 3: 472, 4: 471, 5: 474, 6: 475, 7: 474, 8: 476, 9: 456, 10: 468, 11: 474, 12: 474, 13: 475, 14: 477, 15: 463, 16: 471, 17: 475, 18: 472, 19: 473, 20: 475, 21: 471, 22: 471, 23: 465, 24: 472}
+Found alignment graph trace in 0.4648165702819824 sec..
+Found a trace with 1039 clusters and a total cost of 51260871
+Skipping optimization pass..
+Finished optimization in 0.0009589195251464844 sec..
+Uncompressed alignment will have 3764000 cells..
+Assembling final alignment in /u/ianchen3/project/output/E0/MagusAln.fasta
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_17.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_17.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_17.txt ..
+Appending induced alignment, 38 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_16.txt
+Read 36 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_16.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_16.txt
+Read 36 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_16.txt ..
+Appending induced alignment, 36 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_8.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_8.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_8.txt ..
+Appending induced alignment, 38 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_3.txt
+Read 44 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_3.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_3.txt
+Read 44 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_3.txt ..
+Appending induced alignment, 44 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_23.txt
+Read 26 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_23.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_23.txt
+Read 26 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_23.txt ..
+Appending induced alignment, 26 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_11.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_11.txt
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_11.txt ..
+Appending induced alignment, 51 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_13.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_13.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_13.txt
+Read 38 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_13.txt ..
+Appending induced alignment, 38 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_1.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_1.txt
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_1.txt ..
+Appending induced alignment, 50 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_24.txt
+Read 31 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_24.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_24.txt
+Read 31 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_24.txt ..
+Appending induced alignment, 31 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_22.txt
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_22.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_22.txt
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_22.txt ..
+Appending induced alignment, 35 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_20.txt
+Read 33 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_20.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_20.txt
+Read 33 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_20.txt ..
+Appending induced alignment, 33 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_14.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_14.txt
+Read 34 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_14.txt ..
+Appending induced alignment, 34 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_12.txt
+Read 43 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_12.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_12.txt
+Read 43 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_12.txt ..
+Appending induced alignment, 43 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_2.txt
+Read 53 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_2.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_2.txt
+Read 53 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_2.txt ..
+Appending induced alignment, 53 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_7.txt
+Read 46 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_7.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_7.txt
+Read 46 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_7.txt ..
+Appending induced alignment, 46 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_21.txt
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_21.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_21.txt
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_21.txt ..
+Appending induced alignment, 30 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_15.txt
+Read 41 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_15.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_15.txt
+Read 41 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_15.txt ..
+Appending induced alignment, 41 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_9.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_9.txt
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_9.txt ..
+Appending induced alignment, 49 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_19.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_19.txt
+Read 39 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_19.txt ..
+Appending induced alignment, 39 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_4.txt
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_4.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_4.txt
+Read 49 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_4.txt ..
+Appending induced alignment, 49 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_6.txt
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_6.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_6.txt
+Read 50 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_6.txt ..
+Appending induced alignment, 50 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_10.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_10.txt
+Read 35 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_10.txt ..
+Appending induced alignment, 35 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_18.txt
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_18.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_18.txt
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_18.txt ..
+Appending induced alignment, 30 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_5.txt
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_5.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_5.txt
+Read 51 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_5.txt ..
+Appending induced alignment, 51 sequences of length 3764..
+Running a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_25.txt
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/subalignments/subalignment_subset_25.txt ..
+Completed a task, output file: /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_25.txt
+Read 30 sequences from /u/ianchen3/project/output/E0/magus_working_dir/graph/induced_subalignment_subset_25.txt ..
+Appending induced alignment, 30 sequences of length 3764..
+Wrote final alignment to /u/ianchen3/project/output/E0/MagusAln.fasta
+Merged 25 subalignments into /u/ianchen3/project/output/E0/MagusAln.fasta in 365.1658935546875 sec..
+Completed a task, output file: /u/ianchen3/project/output/E0/MagusAln.fasta
+Waiting for 0 tasks to finish..
+MAGUS finished in 479.5620265007019 seconds..
+FastTree Version 2.1.11 SSE3
+Alignment: standard input
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: Local boot 1000
+Search: Normal +NNI +SPR (2 rounds range 10) (no ML-NNI)
+TopHits: 1.00*sqrtN close=default refresh=0.80
+      0.19 seconds: Top hits for    127 of    999 seqs (at seed    100)
+      0.35 seconds: Top hits for    285 of    999 seqs (at seed    200)
+      0.47 seconds: Top hits for    412 of    999 seqs (at seed    300)
+      0.61 seconds: Top hits for    562 of    999 seqs (at seed    400)
+      0.78 seconds: Top hits for    715 of    999 seqs (at seed    600)
+      0.89 seconds: Top hits for    819 of    999 seqs (at seed    700)
+      1.04 seconds: Top hits for    937 of    999 seqs (at seed    900)
+      1.28 seconds: Joined    100 of    996
+      1.55 seconds: Joined    200 of    996
+      1.96 seconds: Joined    300 of    996
+      2.43 seconds: Joined    400 of    996
+      2.93 seconds: Joined    500 of    996
+      3.48 seconds: Joined    600 of    996
+      3.93 seconds: Joined    700 of    996
+      4.36 seconds: Joined    800 of    996
+      4.78 seconds: Joined    900 of    996
+Initial topology in 5.06 seconds
+Refining topology: 40 rounds ME-NNIs, 2 rounds ME-SPRs, 0 rounds ML-NNIs
+      5.05 seconds: ME NNI round 1 of 40, 1 of 997 splits
+      5.17 seconds: ME NNI round 1 of 40, 501 of 997 splits, 59 changes (max delta 0.170)
+      5.28 seconds: ME NNI round 2 of 40, 1 of 997 splits
+      5.39 seconds: ME NNI round 2 of 40, 501 of 997 splits, 17 changes (max delta 0.094)
+      5.50 seconds: ME NNI round 3 of 40, 1 of 997 splits
+      5.61 seconds: ME NNI round 3 of 40, 501 of 997 splits, 14 changes (max delta 0.038)
+      6.08 seconds: SPR round   1 of   2, 101 of 1996 nodes
+      6.48 seconds: SPR round   1 of   2, 201 of 1996 nodes
+      6.92 seconds: SPR round   1 of   2, 301 of 1996 nodes
+      7.33 seconds: SPR round   1 of   2, 401 of 1996 nodes
+      7.75 seconds: SPR round   1 of   2, 501 of 1996 nodes
+      8.20 seconds: SPR round   1 of   2, 601 of 1996 nodes
+      8.58 seconds: SPR round   1 of   2, 701 of 1996 nodes
+      8.98 seconds: SPR round   1 of   2, 801 of 1996 nodes
+      9.39 seconds: SPR round   1 of   2, 901 of 1996 nodes
+      9.80 seconds: SPR round   1 of   2, 1001 of 1996 nodes
+     10.23 seconds: SPR round   1 of   2, 1101 of 1996 nodes
+     10.64 seconds: SPR round   1 of   2, 1201 of 1996 nodes
+     11.03 seconds: SPR round   1 of   2, 1301 of 1996 nodes
+     11.45 seconds: SPR round   1 of   2, 1401 of 1996 nodes
+     11.86 seconds: SPR round   1 of   2, 1501 of 1996 nodes
+     12.27 seconds: SPR round   1 of   2, 1601 of 1996 nodes
+     12.71 seconds: SPR round   1 of   2, 1701 of 1996 nodes
+     13.18 seconds: SPR round   1 of   2, 1801 of 1996 nodes
+     13.58 seconds: SPR round   1 of   2, 1901 of 1996 nodes
+     14.00 seconds: ME NNI round 14 of 40, 1 of 997 splits
+     14.11 seconds: ME NNI round 14 of 40, 501 of 997 splits, 3 changes (max delta 0.015)
+     14.22 seconds: ME NNI round 15 of 40, 1 of 997 splits
+     14.33 seconds: ME NNI round 15 of 40, 501 of 997 splits, 2 changes (max delta 0.010)
+     14.43 seconds: ME NNI round 16 of 40, 1 of 997 splits
+     14.86 seconds: SPR round   2 of   2, 101 of 1996 nodes
+     15.25 seconds: SPR round   2 of   2, 201 of 1996 nodes
+     15.70 seconds: SPR round   2 of   2, 301 of 1996 nodes
+     16.11 seconds: SPR round   2 of   2, 401 of 1996 nodes
+     16.52 seconds: SPR round   2 of   2, 501 of 1996 nodes
+     16.99 seconds: SPR round   2 of   2, 601 of 1996 nodes
+     17.38 seconds: SPR round   2 of   2, 701 of 1996 nodes
+     17.78 seconds: SPR round   2 of   2, 801 of 1996 nodes
+     18.15 seconds: SPR round   2 of   2, 901 of 1996 nodes
+     18.57 seconds: SPR round   2 of   2, 1001 of 1996 nodes
+     18.98 seconds: SPR round   2 of   2, 1101 of 1996 nodes
+     19.39 seconds: SPR round   2 of   2, 1201 of 1996 nodes
+     19.83 seconds: SPR round   2 of   2, 1301 of 1996 nodes
+     20.26 seconds: SPR round   2 of   2, 1401 of 1996 nodes
+     20.65 seconds: SPR round   2 of   2, 1501 of 1996 nodes
+     21.11 seconds: SPR round   2 of   2, 1601 of 1996 nodes
+     21.51 seconds: SPR round   2 of   2, 1701 of 1996 nodes
+     21.97 seconds: SPR round   2 of   2, 1801 of 1996 nodes
+     22.42 seconds: SPR round   2 of   2, 1901 of 1996 nodes
+     22.83 seconds: ME NNI round 27 of 40, 1 of 997 splits
+     22.94 seconds: ME NNI round 27 of 40, 501 of 997 splits, 0 changes
+Total branch-length 396.546 after 23.29 sec
+     25.81 seconds: Local bootstrap for    100 of    996 internal splits
+     28.15 seconds: Local bootstrap for    200 of    996 internal splits
+     30.49 seconds: Local bootstrap for    300 of    996 internal splits
+     32.83 seconds: Local bootstrap for    400 of    996 internal splits
+     35.17 seconds: Local bootstrap for    500 of    996 internal splits
+     37.51 seconds: Local bootstrap for    600 of    996 internal splits
+     39.85 seconds: Local bootstrap for    700 of    996 internal splits
+     42.20 seconds: Local bootstrap for    800 of    996 internal splits
+     44.53 seconds: Local bootstrap for    900 of    996 internal splits
+Total time: 46.78 seconds Unique: 999/1000 Bad splits: 0/996
+FastTree Version 2.1.11 SSE3
+Alignment: standard input
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: Local boot 1000
+Search: Normal +NNI +SPR (2 rounds range 10) (no ML-NNI)
+TopHits: 1.00*sqrtN close=default refresh=0.80
+      0.18 seconds: Top hits for    121 of    999 seqs (at seed    100)
+      0.35 seconds: Top hits for    287 of    999 seqs (at seed    200)
+      0.48 seconds: Top hits for    412 of    999 seqs (at seed    300)
+      0.62 seconds: Top hits for    562 of    999 seqs (at seed    400)
+      0.80 seconds: Top hits for    716 of    999 seqs (at seed    600)
+      0.91 seconds: Top hits for    809 of    999 seqs (at seed    700)
+      1.08 seconds: Top hits for    936 of    999 seqs (at seed    900)
+      1.33 seconds: Joined    100 of    996
+      1.61 seconds: Joined    200 of    996
+      1.93 seconds: Joined    300 of    996
+      2.45 seconds: Joined    400 of    996
+      2.95 seconds: Joined    500 of    996
+      3.49 seconds: Joined    600 of    996
+      3.97 seconds: Joined    700 of    996
+      4.44 seconds: Joined    800 of    996
+      4.89 seconds: Joined    900 of    996
+Initial topology in 5.15 seconds
+Refining topology: 40 rounds ME-NNIs, 2 rounds ME-SPRs, 0 rounds ML-NNIs
+      5.14 seconds: ME NNI round 1 of 40, 1 of 997 splits
+      5.27 seconds: ME NNI round 1 of 40, 501 of 997 splits, 61 changes (max delta 0.160)
+      5.39 seconds: ME NNI round 2 of 40, 1 of 997 splits
+      5.51 seconds: ME NNI round 2 of 40, 501 of 997 splits, 17 changes (max delta 0.047)
+      5.63 seconds: ME NNI round 3 of 40, 1 of 997 splits
+      5.73 seconds: ME NNI round 3 of 40, 401 of 997 splits, 13 changes (max delta 0.045)
+      5.84 seconds: ME NNI round 7 of 40, 1 of 997 splits
+      6.28 seconds: SPR round   1 of   2, 101 of 1996 nodes
+      6.70 seconds: SPR round   1 of   2, 201 of 1996 nodes
+      7.15 seconds: SPR round   1 of   2, 301 of 1996 nodes
+      7.60 seconds: SPR round   1 of   2, 401 of 1996 nodes
+      8.01 seconds: SPR round   1 of   2, 501 of 1996 nodes
+      8.46 seconds: SPR round   1 of   2, 601 of 1996 nodes
+      8.89 seconds: SPR round   1 of   2, 701 of 1996 nodes
+      9.32 seconds: SPR round   1 of   2, 801 of 1996 nodes
+      9.82 seconds: SPR round   1 of   2, 901 of 1996 nodes
+     10.23 seconds: SPR round   1 of   2, 1001 of 1996 nodes
+     10.66 seconds: SPR round   1 of   2, 1101 of 1996 nodes
+     11.12 seconds: SPR round   1 of   2, 1201 of 1996 nodes
+     11.57 seconds: SPR round   1 of   2, 1301 of 1996 nodes
+     12.07 seconds: SPR round   1 of   2, 1401 of 1996 nodes
+     12.51 seconds: SPR round   1 of   2, 1501 of 1996 nodes
+     12.99 seconds: SPR round   1 of   2, 1601 of 1996 nodes
+     13.42 seconds: SPR round   1 of   2, 1701 of 1996 nodes
+     13.89 seconds: SPR round   1 of   2, 1801 of 1996 nodes
+     14.36 seconds: SPR round   1 of   2, 1901 of 1996 nodes
+     14.81 seconds: ME NNI round 14 of 40, 1 of 997 splits
+     14.93 seconds: ME NNI round 14 of 40, 501 of 997 splits, 1 changes (max delta 0.004)
+     15.05 seconds: ME NNI round 15 of 40, 1 of 997 splits
+     15.17 seconds: ME NNI round 15 of 40, 501 of 997 splits, 0 changes
+     15.29 seconds: SPR round   2 of   2, 1 of 1996 nodes
+     15.72 seconds: SPR round   2 of   2, 101 of 1996 nodes
+     16.15 seconds: SPR round   2 of   2, 201 of 1996 nodes
+     16.59 seconds: SPR round   2 of   2, 301 of 1996 nodes
+     17.04 seconds: SPR round   2 of   2, 401 of 1996 nodes
+     17.45 seconds: SPR round   2 of   2, 501 of 1996 nodes
+     17.91 seconds: SPR round   2 of   2, 601 of 1996 nodes
+     18.32 seconds: SPR round   2 of   2, 701 of 1996 nodes
+     18.77 seconds: SPR round   2 of   2, 801 of 1996 nodes
+     19.26 seconds: SPR round   2 of   2, 901 of 1996 nodes
+     19.67 seconds: SPR round   2 of   2, 1001 of 1996 nodes
+     20.10 seconds: SPR round   2 of   2, 1101 of 1996 nodes
+     20.56 seconds: SPR round   2 of   2, 1201 of 1996 nodes
+     21.01 seconds: SPR round   2 of   2, 1301 of 1996 nodes
+     21.51 seconds: SPR round   2 of   2, 1401 of 1996 nodes
+     21.95 seconds: SPR round   2 of   2, 1501 of 1996 nodes
+     22.43 seconds: SPR round   2 of   2, 1601 of 1996 nodes
+     22.87 seconds: SPR round   2 of   2, 1701 of 1996 nodes
+     23.35 seconds: SPR round   2 of   2, 1801 of 1996 nodes
+     23.82 seconds: SPR round   2 of   2, 1901 of 1996 nodes
+     24.28 seconds: ME NNI round 27 of 40, 1 of 997 splits
+     24.40 seconds: ME NNI round 27 of 40, 501 of 997 splits, 0 changes
+Total branch-length 398.780 after 24.77 sec
+     27.22 seconds: Local bootstrap for    100 of    996 internal splits
+     29.48 seconds: Local bootstrap for    200 of    996 internal splits
+     31.75 seconds: Local bootstrap for    300 of    996 internal splits
+     34.02 seconds: Local bootstrap for    400 of    996 internal splits
+     36.28 seconds: Local bootstrap for    500 of    996 internal splits
+     38.55 seconds: Local bootstrap for    600 of    996 internal splits
+     40.82 seconds: Local bootstrap for    700 of    996 internal splits
+     43.09 seconds: Local bootstrap for    800 of    996 internal splits
+     45.35 seconds: Local bootstrap for    900 of    996 internal splits
+Total time: 47.53 seconds Unique: 999/1000 Bad splits: 0/996
+FastTree Version 2.1.11 SSE3
+Alignment: standard input
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 1000
+Search: Normal +NNI +SPR (2 rounds range 10) +ML-NNI opt-each=1
+TopHits: 1.00*sqrtN close=default refresh=0.80
+ML Model: Generalized Time-Reversible, CAT approximation with 20 rate categories
+      0.19 seconds: Top hits for    127 of    999 seqs (at seed    100)
+      0.35 seconds: Top hits for    285 of    999 seqs (at seed    200)
+      0.47 seconds: Top hits for    412 of    999 seqs (at seed    300)
+      0.61 seconds: Top hits for    562 of    999 seqs (at seed    400)
+      0.77 seconds: Top hits for    715 of    999 seqs (at seed    600)
+      0.89 seconds: Top hits for    819 of    999 seqs (at seed    700)
+      1.04 seconds: Top hits for    937 of    999 seqs (at seed    900)
+      1.27 seconds: Joined    100 of    996
+      1.55 seconds: Joined    200 of    996
+      1.95 seconds: Joined    300 of    996
+      2.43 seconds: Joined    400 of    996
+      2.93 seconds: Joined    500 of    996
+      3.48 seconds: Joined    600 of    996
+      3.93 seconds: Joined    700 of    996
+      4.35 seconds: Joined    800 of    996
+      4.77 seconds: Joined    900 of    996
+Initial topology in 5.05 seconds
+Refining topology: 40 rounds ME-NNIs, 2 rounds ME-SPRs, 20 rounds ML-NNIs
+      5.04 seconds: ME NNI round 1 of 40, 1 of 997 splits
+      5.15 seconds: ME NNI round 1 of 40, 501 of 997 splits, 59 changes (max delta 0.170)
+      5.27 seconds: ME NNI round 2 of 40, 1 of 997 splits
+      5.38 seconds: ME NNI round 2 of 40, 501 of 997 splits, 17 changes (max delta 0.094)
+      5.49 seconds: ME NNI round 3 of 40, 1 of 997 splits
+      5.60 seconds: ME NNI round 3 of 40, 501 of 997 splits, 14 changes (max delta 0.038)
+      6.07 seconds: SPR round   1 of   2, 101 of 1996 nodes
+      6.47 seconds: SPR round   1 of   2, 201 of 1996 nodes
+      6.91 seconds: SPR round   1 of   2, 301 of 1996 nodes
+      7.32 seconds: SPR round   1 of   2, 401 of 1996 nodes
+      7.74 seconds: SPR round   1 of   2, 501 of 1996 nodes
+      8.19 seconds: SPR round   1 of   2, 601 of 1996 nodes
+      8.57 seconds: SPR round   1 of   2, 701 of 1996 nodes
+      8.97 seconds: SPR round   1 of   2, 801 of 1996 nodes
+      9.38 seconds: SPR round   1 of   2, 901 of 1996 nodes
+      9.80 seconds: SPR round   1 of   2, 1001 of 1996 nodes
+     10.22 seconds: SPR round   1 of   2, 1101 of 1996 nodes
+     10.63 seconds: SPR round   1 of   2, 1201 of 1996 nodes
+     11.02 seconds: SPR round   1 of   2, 1301 of 1996 nodes
+     11.44 seconds: SPR round   1 of   2, 1401 of 1996 nodes
+     11.85 seconds: SPR round   1 of   2, 1501 of 1996 nodes
+     12.26 seconds: SPR round   1 of   2, 1601 of 1996 nodes
+     12.70 seconds: SPR round   1 of   2, 1701 of 1996 nodes
+     13.17 seconds: SPR round   1 of   2, 1801 of 1996 nodes
+     13.57 seconds: SPR round   1 of   2, 1901 of 1996 nodes
+     13.99 seconds: ME NNI round 14 of 40, 1 of 997 splits
+     14.10 seconds: ME NNI round 14 of 40, 501 of 997 splits, 3 changes (max delta 0.015)
+     14.20 seconds: ME NNI round 15 of 40, 1 of 997 splits
+     14.31 seconds: ME NNI round 15 of 40, 501 of 997 splits, 2 changes (max delta 0.010)
+     14.42 seconds: ME NNI round 16 of 40, 1 of 997 splits
+     14.84 seconds: SPR round   2 of   2, 101 of 1996 nodes
+     15.23 seconds: SPR round   2 of   2, 201 of 1996 nodes
+     15.69 seconds: SPR round   2 of   2, 301 of 1996 nodes
+     16.09 seconds: SPR round   2 of   2, 401 of 1996 nodes
+     16.51 seconds: SPR round   2 of   2, 501 of 1996 nodes
+     16.98 seconds: SPR round   2 of   2, 601 of 1996 nodes
+     17.36 seconds: SPR round   2 of   2, 701 of 1996 nodes
+     17.76 seconds: SPR round   2 of   2, 801 of 1996 nodes
+     18.13 seconds: SPR round   2 of   2, 901 of 1996 nodes
+     18.55 seconds: SPR round   2 of   2, 1001 of 1996 nodes
+     18.96 seconds: SPR round   2 of   2, 1101 of 1996 nodes
+     19.37 seconds: SPR round   2 of   2, 1201 of 1996 nodes
+     19.81 seconds: SPR round   2 of   2, 1301 of 1996 nodes
+     20.24 seconds: SPR round   2 of   2, 1401 of 1996 nodes
+     20.63 seconds: SPR round   2 of   2, 1501 of 1996 nodes
+     21.09 seconds: SPR round   2 of   2, 1601 of 1996 nodes
+     21.49 seconds: SPR round   2 of   2, 1701 of 1996 nodes
+     21.95 seconds: SPR round   2 of   2, 1801 of 1996 nodes
+     22.40 seconds: SPR round   2 of   2, 1901 of 1996 nodes
+     22.81 seconds: ME NNI round 27 of 40, 1 of 997 splits
+     22.92 seconds: ME NNI round 27 of 40, 501 of 997 splits, 0 changes
+Total branch-length 396.546 after 23.26 sec
+     23.31 seconds: ML Lengths 1 of 997 splits
+     23.53 seconds: ML Lengths 101 of 997 splits
+     23.75 seconds: ML Lengths 201 of 997 splits
+     23.97 seconds: ML Lengths 301 of 997 splits
+     24.19 seconds: ML Lengths 401 of 997 splits
+     24.40 seconds: ML Lengths 501 of 997 splits
+     24.62 seconds: ML Lengths 601 of 997 splits
+     24.84 seconds: ML Lengths 701 of 997 splits
+     25.06 seconds: ML Lengths 801 of 997 splits
+     25.28 seconds: ML Lengths 901 of 997 splits
+     25.49 seconds: ML NNI round 1 of 20, 1 of 997 splits
+     26.28 seconds: ML NNI round 1 of 20, 101 of 997 splits, 7 changes (max delta 4.442)
+     27.07 seconds: ML NNI round 1 of 20, 201 of 997 splits, 18 changes (max delta 4.442)
+     27.85 seconds: ML NNI round 1 of 20, 301 of 997 splits, 22 changes (max delta 4.442)
+     28.65 seconds: ML NNI round 1 of 20, 401 of 997 splits, 30 changes (max delta 4.586)
+     29.40 seconds: ML NNI round 1 of 20, 501 of 997 splits, 36 changes (max delta 5.230)
+     30.20 seconds: ML NNI round 1 of 20, 601 of 997 splits, 44 changes (max delta 5.230)
+     30.98 seconds: ML NNI round 1 of 20, 701 of 997 splits, 49 changes (max delta 5.230)
+     31.74 seconds: ML NNI round 1 of 20, 801 of 997 splits, 55 changes (max delta 5.230)
+     32.55 seconds: ML NNI round 1 of 20, 901 of 997 splits, 67 changes (max delta 5.230)
+ML-NNI round 1: LogLk = -1052843.912 NNIs 73 max delta 5.23 Time 33.34
+     33.34 seconds: Optimizing GTR model, step 1 of 12
+     34.31 seconds: Optimizing GTR model, step 2 of 12
+     36.66 seconds: Optimizing GTR model, step 4 of 12
+     38.84 seconds: Optimizing GTR model, step 6 of 12
+     39.73 seconds: Optimizing GTR model, step 7 of 12
+     40.45 seconds: Optimizing GTR model, step 8 of 12
+     41.26 seconds: Optimizing GTR model, step 9 of 12
+     41.99 seconds: Optimizing GTR model, step 10 of 12
+     42.71 seconds: Optimizing GTR model, step 11 of 12
+     43.44 seconds: Optimizing GTR model, step 12 of 12
+GTR Frequencies: 0.2571 0.2428 0.2453 0.2548
+GTR rates(ac ag at cg ct gt) 1.2378 2.2782 0.6068 1.2562 2.8230 1.0000
+     44.30 seconds: ML Lengths 1 of 997 splits
+     44.59 seconds: ML Lengths 101 of 997 splits
+     44.87 seconds: ML Lengths 201 of 997 splits
+     45.15 seconds: ML Lengths 301 of 997 splits
+     45.43 seconds: ML Lengths 401 of 997 splits
+     45.71 seconds: ML Lengths 501 of 997 splits
+     45.99 seconds: ML Lengths 601 of 997 splits
+     46.27 seconds: ML Lengths 701 of 997 splits
+     46.55 seconds: ML Lengths 801 of 997 splits
+     46.82 seconds: ML Lengths 901 of 997 splits
+     47.18 seconds: Site likelihoods with rate category 1 of 20
+     47.36 seconds: Site likelihoods with rate category 3 of 20
+     47.53 seconds: Site likelihoods with rate category 5 of 20
+     47.69 seconds: Site likelihoods with rate category 7 of 20
+     47.86 seconds: Site likelihoods with rate category 9 of 20
+     48.03 seconds: Site likelihoods with rate category 11 of 20
+     48.20 seconds: Site likelihoods with rate category 13 of 20
+     48.37 seconds: Site likelihoods with rate category 15 of 20
+     48.54 seconds: Site likelihoods with rate category 17 of 20
+     48.70 seconds: Site likelihoods with rate category 19 of 20
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.902 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+     48.91 seconds: ML NNI round 2 of 20, 1 of 997 splits
+     49.46 seconds: ML NNI round 2 of 20, 101 of 997 splits, 10 changes (max delta 6.680)
+     50.03 seconds: ML NNI round 2 of 20, 201 of 997 splits, 21 changes (max delta 7.971)
+     50.56 seconds: ML NNI round 2 of 20, 301 of 997 splits, 29 changes (max delta 7.971)
+     51.08 seconds: ML NNI round 2 of 20, 401 of 997 splits, 38 changes (max delta 7.971)
+     51.63 seconds: ML NNI round 2 of 20, 501 of 997 splits, 46 changes (max delta 7.971)
+     52.29 seconds: ML NNI round 2 of 20, 601 of 997 splits, 56 changes (max delta 17.232)
+     52.85 seconds: ML NNI round 2 of 20, 701 of 997 splits, 67 changes (max delta 17.232)
+     53.45 seconds: ML NNI round 2 of 20, 801 of 997 splits, 82 changes (max delta 17.232)
+     54.04 seconds: ML NNI round 2 of 20, 901 of 997 splits, 95 changes (max delta 17.232)
+ML-NNI round 2: LogLk = -958221.775 NNIs 106 max delta 17.23 Time 54.62
+     54.62 seconds: ML NNI round 3 of 20, 1 of 997 splits
+     55.33 seconds: ML NNI round 3 of 20, 101 of 997 splits, 4 changes (max delta 2.877)
+     56.05 seconds: ML NNI round 3 of 20, 201 of 997 splits, 7 changes (max delta 2.877)
+     56.76 seconds: ML NNI round 3 of 20, 301 of 997 splits, 12 changes (max delta 6.584)
+     57.55 seconds: ML NNI round 3 of 20, 401 of 997 splits, 20 changes (max delta 6.584)
+     58.18 seconds: ML NNI round 3 of 20, 501 of 997 splits, 23 changes (max delta 7.977)
+ML-NNI round 3: LogLk = -958039.729 NNIs 29 max delta 12.12 Time 58.90
+     58.90 seconds: ML NNI round 4 of 20, 1 of 997 splits
+     59.51 seconds: ML NNI round 4 of 20, 101 of 997 splits, 1 changes (max delta 0.171)
+     60.13 seconds: ML NNI round 4 of 20, 201 of 997 splits, 1 changes (max delta 0.171)
+     60.66 seconds: ML NNI round 4 of 20, 301 of 997 splits, 2 changes (max delta 0.171)
+     61.20 seconds: ML NNI round 4 of 20, 401 of 997 splits, 3 changes (max delta 0.171)
+ML-NNI round 4: LogLk = -958035.890 NNIs 4 max delta 0.47 Time 61.34
+     61.33 seconds: ML NNI round 5 of 20, 1 of 997 splits
+     61.94 seconds: ML NNI round 5 of 20, 101 of 997 splits, 1 changes (max delta 0.258)
+ML-NNI round 5: LogLk = -958035.518 NNIs 1 max delta 0.26 Time 62.19
+     62.18 seconds: ML NNI round 6 of 20, 1 of 997 splits
+ML-NNI round 6: LogLk = -958030.398 NNIs 0 max delta 0.00 Time 62.39
+Turning off heuristics for final round of ML NNIs (converged)
+     62.39 seconds: ML NNI round 7 of 20, 1 of 997 splits
+     64.47 seconds: ML NNI round 7 of 20, 201 of 997 splits, 0 changes
+     66.61 seconds: ML NNI round 7 of 20, 401 of 997 splits, 4 changes (max delta 0.630)
+     68.74 seconds: ML NNI round 7 of 20, 601 of 997 splits, 7 changes (max delta 6.683)
+     70.89 seconds: ML NNI round 7 of 20, 801 of 997 splits, 10 changes (max delta 6.683)
+ML-NNI round 7: LogLk = -956640.818 NNIs 12 max delta 6.68 Time 73.01 (final)
+     73.01 seconds: ML Lengths 1 of 997 splits
+     73.28 seconds: ML Lengths 101 of 997 splits
+     73.56 seconds: ML Lengths 201 of 997 splits
+     73.83 seconds: ML Lengths 301 of 997 splits
+     74.10 seconds: ML Lengths 401 of 997 splits
+     74.38 seconds: ML Lengths 501 of 997 splits
+     74.65 seconds: ML Lengths 601 of 997 splits
+     74.92 seconds: ML Lengths 701 of 997 splits
+     75.20 seconds: ML Lengths 801 of 997 splits
+     75.48 seconds: ML Lengths 901 of 997 splits
+Optimize all lengths: LogLk = -956552.651 Time 75.77
+     77.10 seconds: ML split tests for    100 of    996 internal splits
+     78.42 seconds: ML split tests for    200 of    996 internal splits
+     79.72 seconds: ML split tests for    300 of    996 internal splits
+     81.03 seconds: ML split tests for    400 of    996 internal splits
+     82.33 seconds: ML split tests for    500 of    996 internal splits
+     83.64 seconds: ML split tests for    600 of    996 internal splits
+     84.96 seconds: ML split tests for    700 of    996 internal splits
+     86.27 seconds: ML split tests for    800 of    996 internal splits
+     87.59 seconds: ML split tests for    900 of    996 internal splits
+     88.93 seconds: Site likelihoods with rate category 1 of 20
+     89.11 seconds: Site likelihoods with rate category 3 of 20
+     89.28 seconds: Site likelihoods with rate category 5 of 20
+     89.45 seconds: Site likelihoods with rate category 7 of 20
+     89.63 seconds: Site likelihoods with rate category 9 of 20
+     89.80 seconds: Site likelihoods with rate category 11 of 20
+     89.97 seconds: Site likelihoods with rate category 13 of 20
+     90.14 seconds: Site likelihoods with rate category 15 of 20
+     90.31 seconds: Site likelihoods with rate category 17 of 20
+     90.48 seconds: Site likelihoods with rate category 19 of 20
+     90.63 seconds: Optimizing alpha round 1
+Gamma(20) LogLk = -958268.980 alpha = 1.424 rescaling lengths by 1.888
+Total time: 90.68 seconds Unique: 999/1000 Bad splits: 3/996 Worst delta-LogLk 0.140
+FastTree Version 2.1.11 SSE3
+Alignment: standard input
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 1000
+Search: Normal +NNI +SPR (2 rounds range 10) +ML-NNI opt-each=1
+TopHits: 1.00*sqrtN close=default refresh=0.80
+ML Model: Generalized Time-Reversible, CAT approximation with 20 rate categories
+      0.18 seconds: Top hits for    121 of    999 seqs (at seed    100)
+      0.35 seconds: Top hits for    287 of    999 seqs (at seed    200)
+      0.48 seconds: Top hits for    412 of    999 seqs (at seed    300)
+      0.62 seconds: Top hits for    562 of    999 seqs (at seed    400)
+      0.80 seconds: Top hits for    716 of    999 seqs (at seed    600)
+      0.91 seconds: Top hits for    809 of    999 seqs (at seed    700)
+      1.08 seconds: Top hits for    936 of    999 seqs (at seed    900)
+      1.33 seconds: Joined    100 of    996
+      1.61 seconds: Joined    200 of    996
+      1.93 seconds: Joined    300 of    996
+      2.45 seconds: Joined    400 of    996
+      2.95 seconds: Joined    500 of    996
+      3.49 seconds: Joined    600 of    996
+      3.96 seconds: Joined    700 of    996
+      4.44 seconds: Joined    800 of    996
+      4.88 seconds: Joined    900 of    996
+Initial topology in 5.15 seconds
+Refining topology: 40 rounds ME-NNIs, 2 rounds ME-SPRs, 20 rounds ML-NNIs
+      5.14 seconds: ME NNI round 1 of 40, 1 of 997 splits
+      5.25 seconds: ME NNI round 1 of 40, 401 of 997 splits, 43 changes (max delta 0.159)
+      5.35 seconds: ME NNI round 1 of 40, 801 of 997 splits, 96 changes (max delta 0.160)
+      5.47 seconds: ME NNI round 2 of 40, 301 of 997 splits, 8 changes (max delta 0.024)
+      5.59 seconds: ME NNI round 2 of 40, 801 of 997 splits, 27 changes (max delta 0.069)
+      5.72 seconds: ME NNI round 3 of 40, 301 of 997 splits, 6 changes (max delta 0.045)
+      5.83 seconds: ME NNI round 6 of 40, 1 of 997 splits
+      6.29 seconds: SPR round   1 of   2, 101 of 1996 nodes
+      6.71 seconds: SPR round   1 of   2, 201 of 1996 nodes
+      7.16 seconds: SPR round   1 of   2, 301 of 1996 nodes
+      7.61 seconds: SPR round   1 of   2, 401 of 1996 nodes
+      8.02 seconds: SPR round   1 of   2, 501 of 1996 nodes
+      8.47 seconds: SPR round   1 of   2, 601 of 1996 nodes
+      8.90 seconds: SPR round   1 of   2, 701 of 1996 nodes
+      9.34 seconds: SPR round   1 of   2, 801 of 1996 nodes
+      9.83 seconds: SPR round   1 of   2, 901 of 1996 nodes
+     10.24 seconds: SPR round   1 of   2, 1001 of 1996 nodes
+     10.67 seconds: SPR round   1 of   2, 1101 of 1996 nodes
+     11.13 seconds: SPR round   1 of   2, 1201 of 1996 nodes
+     11.58 seconds: SPR round   1 of   2, 1301 of 1996 nodes
+     12.08 seconds: SPR round   1 of   2, 1401 of 1996 nodes
+     12.52 seconds: SPR round   1 of   2, 1501 of 1996 nodes
+     13.00 seconds: SPR round   1 of   2, 1601 of 1996 nodes
+     13.44 seconds: SPR round   1 of   2, 1701 of 1996 nodes
+     13.90 seconds: SPR round   1 of   2, 1801 of 1996 nodes
+     14.38 seconds: SPR round   1 of   2, 1901 of 1996 nodes
+     14.83 seconds: ME NNI round 14 of 40, 1 of 997 splits
+     14.95 seconds: ME NNI round 14 of 40, 501 of 997 splits, 1 changes (max delta 0.004)
+     15.07 seconds: ME NNI round 15 of 40, 1 of 997 splits
+     15.18 seconds: ME NNI round 15 of 40, 501 of 997 splits, 0 changes
+     15.30 seconds: SPR round   2 of   2, 1 of 1996 nodes
+     15.75 seconds: SPR round   2 of   2, 101 of 1996 nodes
+     16.17 seconds: SPR round   2 of   2, 201 of 1996 nodes
+     16.62 seconds: SPR round   2 of   2, 301 of 1996 nodes
+     17.07 seconds: SPR round   2 of   2, 401 of 1996 nodes
+     17.48 seconds: SPR round   2 of   2, 501 of 1996 nodes
+     17.94 seconds: SPR round   2 of   2, 601 of 1996 nodes
+     18.35 seconds: SPR round   2 of   2, 701 of 1996 nodes
+     18.80 seconds: SPR round   2 of   2, 801 of 1996 nodes
+     19.29 seconds: SPR round   2 of   2, 901 of 1996 nodes
+     19.70 seconds: SPR round   2 of   2, 1001 of 1996 nodes
+     20.13 seconds: SPR round   2 of   2, 1101 of 1996 nodes
+     20.59 seconds: SPR round   2 of   2, 1201 of 1996 nodes
+     21.04 seconds: SPR round   2 of   2, 1301 of 1996 nodes
+     21.54 seconds: SPR round   2 of   2, 1401 of 1996 nodes
+     21.98 seconds: SPR round   2 of   2, 1501 of 1996 nodes
+     22.46 seconds: SPR round   2 of   2, 1601 of 1996 nodes
+     22.89 seconds: SPR round   2 of   2, 1701 of 1996 nodes
+     23.38 seconds: SPR round   2 of   2, 1801 of 1996 nodes
+     23.85 seconds: SPR round   2 of   2, 1901 of 1996 nodes
+     24.30 seconds: ME NNI round 27 of 40, 1 of 997 splits
+     24.42 seconds: ME NNI round 27 of 40, 501 of 997 splits, 0 changes
+Total branch-length 398.780 after 24.80 sec
+     24.85 seconds: ML Lengths 1 of 997 splits
+     25.07 seconds: ML Lengths 101 of 997 splits
+     25.30 seconds: ML Lengths 201 of 997 splits
+     25.52 seconds: ML Lengths 301 of 997 splits
+     25.76 seconds: ML Lengths 401 of 997 splits
+     25.99 seconds: ML Lengths 501 of 997 splits
+     26.21 seconds: ML Lengths 601 of 997 splits
+     26.44 seconds: ML Lengths 701 of 997 splits
+     26.67 seconds: ML Lengths 801 of 997 splits
+     26.89 seconds: ML Lengths 901 of 997 splits
+     27.11 seconds: ML NNI round 1 of 20, 1 of 997 splits
+     27.88 seconds: ML NNI round 1 of 20, 101 of 997 splits, 6 changes (max delta 5.155)
+     28.70 seconds: ML NNI round 1 of 20, 201 of 997 splits, 10 changes (max delta 5.155)
+     29.53 seconds: ML NNI round 1 of 20, 301 of 997 splits, 20 changes (max delta 5.155)
+     30.32 seconds: ML NNI round 1 of 20, 401 of 997 splits, 28 changes (max delta 5.155)
+     31.14 seconds: ML NNI round 1 of 20, 501 of 997 splits, 33 changes (max delta 5.155)
+     31.96 seconds: ML NNI round 1 of 20, 601 of 997 splits, 38 changes (max delta 5.155)
+     32.77 seconds: ML NNI round 1 of 20, 701 of 997 splits, 52 changes (max delta 5.155)
+     33.58 seconds: ML NNI round 1 of 20, 801 of 997 splits, 61 changes (max delta 5.155)
+     34.40 seconds: ML NNI round 1 of 20, 901 of 997 splits, 71 changes (max delta 5.155)
+ML-NNI round 1: LogLk = -1053441.523 NNIs 77 max delta 6.74 Time 35.23
+     35.23 seconds: Optimizing GTR model, step 1 of 12
+     36.22 seconds: Optimizing GTR model, step 2 of 12
+     38.58 seconds: Optimizing GTR model, step 4 of 12
+     39.48 seconds: Optimizing GTR model, step 5 of 12
+     40.61 seconds: Optimizing GTR model, step 6 of 12
+     41.51 seconds: Optimizing GTR model, step 7 of 12
+     42.24 seconds: Optimizing GTR model, step 8 of 12
+     43.05 seconds: Optimizing GTR model, step 9 of 12
+     43.78 seconds: Optimizing GTR model, step 10 of 12
+     44.52 seconds: Optimizing GTR model, step 11 of 12
+     45.25 seconds: Optimizing GTR model, step 12 of 12
+GTR Frequencies: 0.2571 0.2428 0.2453 0.2548
+GTR rates(ac ag at cg ct gt) 1.2324 2.2761 0.6106 1.2522 2.8166 1.0000
+     46.12 seconds: ML Lengths 1 of 997 splits
+     46.40 seconds: ML Lengths 101 of 997 splits
+     46.69 seconds: ML Lengths 201 of 997 splits
+     46.97 seconds: ML Lengths 301 of 997 splits
+     47.25 seconds: ML Lengths 401 of 997 splits
+     47.53 seconds: ML Lengths 501 of 997 splits
+     47.82 seconds: ML Lengths 601 of 997 splits
+     48.10 seconds: ML Lengths 701 of 997 splits
+     48.38 seconds: ML Lengths 801 of 997 splits
+     48.66 seconds: ML Lengths 901 of 997 splits
+     49.02 seconds: Site likelihoods with rate category 1 of 20
+     49.19 seconds: Site likelihoods with rate category 3 of 20
+     49.36 seconds: Site likelihoods with rate category 5 of 20
+     49.53 seconds: Site likelihoods with rate category 7 of 20
+     49.70 seconds: Site likelihoods with rate category 9 of 20
+     49.87 seconds: Site likelihoods with rate category 11 of 20
+     50.04 seconds: Site likelihoods with rate category 13 of 20
+     50.21 seconds: Site likelihoods with rate category 15 of 20
+     50.38 seconds: Site likelihoods with rate category 17 of 20
+     50.55 seconds: Site likelihoods with rate category 19 of 20
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.920 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+     50.75 seconds: ML NNI round 2 of 20, 1 of 997 splits
+     51.24 seconds: ML NNI round 2 of 20, 101 of 997 splits, 6 changes (max delta 1.063)
+     51.83 seconds: ML NNI round 2 of 20, 201 of 997 splits, 15 changes (max delta 2.554)
+     52.49 seconds: ML NNI round 2 of 20, 301 of 997 splits, 30 changes (max delta 7.040)
+     53.00 seconds: ML NNI round 2 of 20, 401 of 997 splits, 38 changes (max delta 10.797)
+     53.54 seconds: ML NNI round 2 of 20, 501 of 997 splits, 49 changes (max delta 10.797)
+     54.05 seconds: ML NNI round 2 of 20, 601 of 997 splits, 58 changes (max delta 10.797)
+     54.62 seconds: ML NNI round 2 of 20, 701 of 997 splits, 69 changes (max delta 10.797)
+     55.42 seconds: ML NNI round 2 of 20, 801 of 997 splits, 89 changes (max delta 10.797)
+     55.98 seconds: ML NNI round 2 of 20, 901 of 997 splits, 95 changes (max delta 10.797)
+ML-NNI round 2: LogLk = -964492.236 NNIs 106 max delta 10.80 Time 56.52
+     56.51 seconds: ML NNI round 3 of 20, 1 of 997 splits
+     57.13 seconds: ML NNI round 3 of 20, 101 of 997 splits, 1 changes (max delta 0.088)
+     57.82 seconds: ML NNI round 3 of 20, 201 of 997 splits, 6 changes (max delta 0.424)
+     58.52 seconds: ML NNI round 3 of 20, 301 of 997 splits, 10 changes (max delta 0.468)
+     59.32 seconds: ML NNI round 3 of 20, 401 of 997 splits, 14 changes (max delta 0.879)
+     60.03 seconds: ML NNI round 3 of 20, 501 of 997 splits, 21 changes (max delta 1.967)
+ML-NNI round 3: LogLk = -964337.375 NNIs 28 max delta 2.01 Time 60.75
+     60.75 seconds: ML NNI round 4 of 20, 1 of 997 splits
+     61.30 seconds: ML NNI round 4 of 20, 101 of 997 splits, 1 changes (max delta 1.313)
+     61.89 seconds: ML NNI round 4 of 20, 201 of 997 splits, 2 changes (max delta 2.269)
+     62.41 seconds: ML NNI round 4 of 20, 301 of 997 splits, 2 changes (max delta 2.269)
+     63.04 seconds: ML NNI round 4 of 20, 401 of 997 splits, 7 changes (max delta 10.740)
+ML-NNI round 4: LogLk = -964301.941 NNIs 9 max delta 10.74 Time 63.27
+     63.26 seconds: ML NNI round 5 of 20, 1 of 997 splits
+     63.98 seconds: ML NNI round 5 of 20, 101 of 997 splits, 6 changes (max delta 3.254)
+ML-NNI round 5: LogLk = -964293.987 NNIs 8 max delta 3.25 Time 64.10
+     64.10 seconds: ML NNI round 6 of 20, 1 of 997 splits
+ML-NNI round 6: LogLk = -964293.670 NNIs 1 max delta 0.15 Time 64.63
+     64.63 seconds: ML NNI round 7 of 20, 1 of 997 splits
+ML-NNI round 7: LogLk = -964293.398 NNIs 0 max delta 0.00 Time 64.90
+Turning off heuristics for final round of ML NNIs (converged)
+     64.89 seconds: ML NNI round 8 of 20, 1 of 997 splits
+     66.00 seconds: ML NNI round 8 of 20, 101 of 997 splits, 0 changes
+     68.15 seconds: ML NNI round 8 of 20, 301 of 997 splits, 1 changes (max delta 0.024)
+     70.32 seconds: ML NNI round 8 of 20, 501 of 997 splits, 2 changes (max delta 0.036)
+     72.48 seconds: ML NNI round 8 of 20, 701 of 997 splits, 6 changes (max delta 1.628)
+     74.64 seconds: ML NNI round 8 of 20, 901 of 997 splits, 6 changes (max delta 1.628)
+ML-NNI round 8: LogLk = -963194.072 NNIs 7 max delta 1.63 Time 75.73 (final)
+     76.00 seconds: ML Lengths 101 of 997 splits
+     76.28 seconds: ML Lengths 201 of 997 splits
+     76.56 seconds: ML Lengths 301 of 997 splits
+     76.83 seconds: ML Lengths 401 of 997 splits
+     77.11 seconds: ML Lengths 501 of 997 splits
+     77.39 seconds: ML Lengths 601 of 997 splits
+     77.66 seconds: ML Lengths 701 of 997 splits
+     77.94 seconds: ML Lengths 801 of 997 splits
+     78.21 seconds: ML Lengths 901 of 997 splits
+Optimize all lengths: LogLk = -963117.446 Time 78.51
+     79.84 seconds: ML split tests for    100 of    996 internal splits
+     81.14 seconds: ML split tests for    200 of    996 internal splits
+     82.44 seconds: ML split tests for    300 of    996 internal splits
+     83.74 seconds: ML split tests for    400 of    996 internal splits
+     85.04 seconds: ML split tests for    500 of    996 internal splits
+     86.34 seconds: ML split tests for    600 of    996 internal splits
+     87.65 seconds: ML split tests for    700 of    996 internal splits
+     88.95 seconds: ML split tests for    800 of    996 internal splits
+     90.25 seconds: ML split tests for    900 of    996 internal splits
+     91.61 seconds: Site likelihoods with rate category 1 of 20
+     91.78 seconds: Site likelihoods with rate category 3 of 20
+     91.96 seconds: Site likelihoods with rate category 5 of 20
+     92.13 seconds: Site likelihoods with rate category 7 of 20
+     92.31 seconds: Site likelihoods with rate category 9 of 20
+     92.48 seconds: Site likelihoods with rate category 11 of 20
+     92.65 seconds: Site likelihoods with rate category 13 of 20
+     92.82 seconds: Site likelihoods with rate category 15 of 20
+     93.00 seconds: Site likelihoods with rate category 17 of 20
+     93.17 seconds: Site likelihoods with rate category 19 of 20
+     93.31 seconds: Optimizing alpha round 1
+Gamma(20) LogLk = -965171.316 alpha = 1.525 rescaling lengths by 1.711
+Total time: 93.37 seconds Unique: 999/1000 Bad splits: 0/996
+FATAL: Cowardly refusing to overwrite already existing file '/u/ianchen3/project/output/E0/NoAln_ClustalO.tree'. Use --force to force overwriting.
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R0/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E0/MagusAln.fasta ...
+MaxLenNoGap= 1058, NumSeq= 1000, LenRef= 3880, LenEst= 3764, Cells= 7644000
+computing ...
+Number of shared homologies: 446350585
+Number of homologies in the reference alignment: 495478895
+Number of homologies in the estimated alignment: 490667340
+Number of correctly aligned columns: 400
+Number of aligned columns in ref. alignment: 2434
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1446 0
+Number of aligned columns in est. alignment: 2653
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1111 0
+Time to compute (seconds): 0.277
