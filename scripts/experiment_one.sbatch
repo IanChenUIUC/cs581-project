@@ -23,6 +23,8 @@ rtt="$HOME/project/data/ROSE/1000M1/R0/rose.tt"
 aln="$HOME/project/data/ROSE/1000M1/R0/rose.aln.true.fasta"
 unalign="$HOME/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta"
 
+magus_tmp=$HOME/magus_temp/magus_working_dir-$SLURM_JOB_ID
+
 # ==============================================================================
 # Iteration 1
 # ==============================================================================
@@ -30,8 +32,9 @@ out="$HOME/project/output/E1/R0/iter1"
 mkdir -p $out
 
 # magus and clustalo initial tree
-$time "$out/timing.txt" $HOME/methods/magus --recurse false -i $unalign -o $out/magus_guide.tree -d $HOME/magus_temp/magus_working_dir-$SLURM_JOB_ID --overwrite
+$time "$out/timing.txt" $HOME/methods/magus --recurse false -i $unalign -o $out/magus_guide.tree --onlyguidetree true -d $magus_tmp --overwrite
 $time "$out/timing.txt" $HOME/methods/clustalo --max-hmm-iterations=-1 -i $unalign --guidetree-out=$out/clustalo_guide.tree
+rm -rf $magus_tmp
 
 for m in ${initial_method[@]}
 do
@@ -41,41 +44,51 @@ do
 	for s in ${subset_size[@]}
 	do
 		# align using guide tree
-		$time "$out/timing.txt" $HOME/methods/magus --recurse false --maxsubsetsize $s -i $unalign -t $out/${m}_guide.tree -o $out/${m}_${s}_ft_aln.fasta -d $HOME/magus_temp/magus_working_dir-$SLURM_JOB_ID --overwrite
+		$time "$out/timing.txt" $HOME/methods/magus --recurse false --maxsubsetsize $s -i $unalign -t $out/${m}_guide.tree -o $out/${m}_${s}_ft_aln.fasta -d $magus_tmp --overwrite
 		cp $out/${m}_${s}_ft_aln.fasta -d $out/${m}_${s}_ftnoml_aln.fasta
 		# alignment error
-		java -jar $HOME/scripts/FastSP.jar -r $aln -e $out/${m}_${s}_aln.fasta > $out/${m}_${s}_sp.txt
+		java -jar $HOME/scripts/FastSP.jar -r $aln -e $out/${m}_${s}_ft_aln.fasta > $out/${m}_${s}_ft_sp.txt
+		java -jar $HOME/scripts/FastSP.jar -r $aln -e $out/${m}_${s}_ftnoml_aln.fasta > $out/${m}_${s}_ftnoml_sp.txt
+		# clean magus run
+		rm -rf $magus_tmp
 	done
 done
 
 # ==============================================================================
 # Iteration i = 2, 3, 4
 # ==============================================================================
-for i in {2..4}
-do
-	next="$HOME/project/output/E1/R0/iter$i"
-	mkdir -p $next
-
-	for s in ${subset_size[@]}
-	do
-
-		for m in ${initial_method[@]}
-		do
-			# fasttree guide tree with and without ml
-			$time $next/timing.txt $HOME/methods/FastTree -nt -gtr -gamma < $out/${m}_${s}_ft_aln.fasta > $next/${m}_${s}_ft_guide.tree
-			$time $next/timing.txt $HOME/methods/FastTree -nt -gtr -gamma -noml < $out/${m}_${s}_ftnoml_aln.fasta > $next/${m}_${s}_ftnoml_guide.tree
-
-			for g in ${guide_method[@]}
-			do
-				# RF tree error
-				python3 $HOME/scripts/robinson_foulds.py $next/${m}_${s}_${g}_guide.tree $rtt > $next/${m}_${s}_${g}_rf.csv
-				# align using guide tree
-				$time $next/timing.txt $HOME/methods/magus --recurse false --maxsubsetsize $s -i $unalign -t $next/${m}_${s}_${g}_guide.tree -o $next/${m}_${s}_${g}_aln.fasta -d $HOME/magus_temp/magus_working_dir-$SLURM_JOB_ID --overwrite
-				# alignment error
-				java -jar $HOME/scripts/FastSP.jar -r $aln -e $next/${m}_${s}_${g}_aln.fasta > $out/${m}_${s}_${g}_sp.txt
-			done
-		done
-	done
-
-	out=$next
-done
+# for i in {2..4}
+# do
+# 	next="$HOME/project/output/E1/R0/iter$i"
+# 	mkdir -p $next
+# 
+# 	for s in ${subset_size[@]}
+# 	do
+# 
+# 		for m in ${initial_method[@]}
+# 		do
+# 			# fasttree guide tree with and without ml
+# 			$time $next/timing.txt $HOME/methods/FastTree.sh -nt -gtr -gamma $out/${m}_${s}_ft_aln.fasta $next/${m}_${s}_ft_guide.tree
+# 
+# 			break
+# 			$time $next/timing.txt $HOME/methods/FastTree.sh -nt -gtr -gamma -noml $out/${m}_${s}_ftnoml_aln.fasta $next/${m}_${s}_ftnoml_guide.tree
+# 
+# 			for g in ${guide_method[@]}
+# 			do
+# 				# RF tree error
+# 				python3 $HOME/scripts/robinson_foulds.py $next/${m}_${s}_${g}_guide.tree $rtt > $next/${m}_${s}_${g}_rf.csv
+# 				# align using guide tree
+# 				$time $next/timing.txt $HOME/methods/magus --recurse false --maxsubsetsize $s -i $unalign -t $next/${m}_${s}_${g}_guide.tree -o $next/${m}_${s}_${g}_aln.fasta -d $magus_tmp --overwrite
+# 				# alignment error
+# 				java -jar $HOME/scripts/FastSP.jar -r $aln -e $next/${m}_${s}_${g}_aln.fasta > $out/${m}_${s}_${g}_sp.txt
+# 				# clean magus run
+# 				rm -rf $magus_tmp
+# 			done
+# 			break
+# 		done
+# 		break
+# 	done
+# 	break
+# 
+# 	out=$next
+# done
