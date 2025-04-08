@@ -1,0 +1,37 @@
+/u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E1/R1/iter1/magus_guide.tree --onlyguidetree true -d /u/ianchen3/magus_temp/magus_working_dir-1587667 --overwrite
+/u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E1/R1/iter1/magus_guide.tree --onlyguidetree true -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+1126.85user 3.39system 2:24.84elapsed 780%CPU (0avgtext+0avgdata 773064maxresident)k
+16296inputs+68096outputs (0major+1698399minor)pagefaults 0swaps
+/u/ianchen3/methods/clustalo --max-hmm-iterations=-1 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta --guidetree-out=/u/ianchen3/project/output/E1/R1/iter1/clustalo_guide.tree
+59.51user 0.09system 0:05.13elapsed 1161%CPU (0avgtext+0avgdata 22216maxresident)k
+0inputs+64outputs (0major+17812minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/magus_200_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+6464.69user 21.68system 7:02.76elapsed 1534%CPU (0avgtext+0avgdata 804336maxresident)k
+81712inputs+378072outputs (0major+21655581minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/magus_100_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+5394.41user 22.57system 6:02.07elapsed 1496%CPU (0avgtext+0avgdata 767664maxresident)k
+144232inputs+404296outputs (0major+20847145minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/magus_50_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+5036.22user 26.44system 5:52.17elapsed 1437%CPU (0avgtext+0avgdata 775288maxresident)k
+239600inputs+500096outputs (0major+21844574minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/magus_25_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+4830.16user 24.04system 5:42.40elapsed 1417%CPU (0avgtext+0avgdata 844360maxresident)k
+235648inputs+495560outputs (0major+20886679minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/magus_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/magus_10_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+5041.94user 26.84system 5:51.28elapsed 1442%CPU (0avgtext+0avgdata 745224maxresident)k
+228616inputs+489216outputs (0major+22121706minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 200 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/clustalo_200_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+6324.16user 22.95system 6:52.42elapsed 1538%CPU (0avgtext+0avgdata 811580maxresident)k
+100680inputs+402120outputs (0major+22342119minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 100 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/clustalo_100_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+5703.29user 24.89system 6:37.54elapsed 1440%CPU (0avgtext+0avgdata 774560maxresident)k
+231880inputs+502136outputs (0major+21687526minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 50 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/clustalo_50_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+5198.56user 29.92system 7:24.62elapsed 1175%CPU (0avgtext+0avgdata 1325720maxresident)k
+590640inputs+861576outputs (0major+24282800minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 25 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/clustalo_25_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+5485.97user 30.86system 7:48.10elapsed 1178%CPU (0avgtext+0avgdata 1358952maxresident)k
+585392inputs+857232outputs (0major+25134916minor)pagefaults 0swaps
+/u/ianchen3/methods/magus --recurse false --maxsubsetsize 10 -i /u/ianchen3/project/data/ROSE/1000M1/R1/rose.aln.unalign.fasta -t /u/ianchen3/project/output/E1/R1/iter1/clustalo_guide.tree -o /u/ianchen3/project/output/E1/R1/iter1/clustalo_10_ft_aln.fasta -d /u/ianchen3/magus_temp/magus_working_dir-1587674 --overwrite
+5370.81user 30.47system 7:32.74elapsed 1193%CPU (0avgtext+0avgdata 1359332maxresident)k
+573696inputs+845600outputs (0major+24853089minor)pagefaults 0swaps

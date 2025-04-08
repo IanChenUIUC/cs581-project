@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Experiment 1: Parameter Tuning
-#SBATCH --time=04:00:00			   # Job run time (hh:mm:ss)
-#SBATCH --nodes=3			   # Number of nodes
+#SBATCH --time=12:00:00			   # Job run time (hh:mm:ss)
+#SBATCH --nodes=1			   # Number of nodes
 #SBATCH --gres=gpu:0                       # Number of GPUs, use --gres=gpu:A10 to specify GPU model or --gres=gpu:A10:2 to specify both model and number of GPUs
 #SBATCH --ntasks-per-node=16               # Number of cores per node
 #SBATCH --account=25sp-cs581a-eng          # Account
@@ -19,16 +19,18 @@ declare -a guide_method=( "ft" "ftnoml" )
 
 source $HOME/.venv/bin/activate
 
-rtt="$HOME/project/data/ROSE/1000M1/R0/rose.tt"
-aln="$HOME/project/data/ROSE/1000M1/R0/rose.aln.true.fasta"
-unalign="$HOME/project/data/ROSE/1000M1/R0/rose.aln.unalign.fasta"
+rep=0
+
+rtt="$HOME/project/data/ROSE/1000M1/R$rep/rose.tt"
+aln="$HOME/project/data/ROSE/1000M1/R$rep/rose.aln.true.fasta"
+unalign="$HOME/project/data/ROSE/1000M1/R$rep/rose.aln.unalign.fasta"
 
 magus_tmp=$HOME/magus_temp/magus_working_dir-$SLURM_JOB_ID
 
 # ==============================================================================
 # Iteration 1
 # ==============================================================================
-out="$HOME/project/output/E1/R0/iter1"
+out="$HOME/project/output/E1/R$rep/iter1"
 mkdir -p $out
 
 # magus and clustalo initial tree
@@ -57,38 +59,35 @@ done
 # ==============================================================================
 # Iteration i = 2, 3, 4
 # ==============================================================================
-# for i in {2..4}
-# do
-# 	next="$HOME/project/output/E1/R0/iter$i"
-# 	mkdir -p $next
-# 
-# 	for s in ${subset_size[@]}
-# 	do
-# 
-# 		for m in ${initial_method[@]}
-# 		do
-# 			# fasttree guide tree with and without ml
-# 			$time $next/timing.txt $HOME/methods/FastTree.sh -nt -gtr -gamma $out/${m}_${s}_ft_aln.fasta $next/${m}_${s}_ft_guide.tree
-# 
-# 			break
-# 			$time $next/timing.txt $HOME/methods/FastTree.sh -nt -gtr -gamma -noml $out/${m}_${s}_ftnoml_aln.fasta $next/${m}_${s}_ftnoml_guide.tree
-# 
-# 			for g in ${guide_method[@]}
-# 			do
-# 				# RF tree error
-# 				python3 $HOME/scripts/robinson_foulds.py $next/${m}_${s}_${g}_guide.tree $rtt > $next/${m}_${s}_${g}_rf.csv
-# 				# align using guide tree
-# 				$time $next/timing.txt $HOME/methods/magus --recurse false --maxsubsetsize $s -i $unalign -t $next/${m}_${s}_${g}_guide.tree -o $next/${m}_${s}_${g}_aln.fasta -d $magus_tmp --overwrite
-# 				# alignment error
-# 				java -jar $HOME/scripts/FastSP.jar -r $aln -e $next/${m}_${s}_${g}_aln.fasta > $out/${m}_${s}_${g}_sp.txt
-# 				# clean magus run
-# 				rm -rf $magus_tmp
-# 			done
-# 			break
-# 		done
-# 		break
-# 	done
-# 	break
-# 
-# 	out=$next
-# done
+for i in {2..4}
+do
+	next="$HOME/project/output/E1/R$rep/iter$i"
+	mkdir -p $next
+
+	for s in ${subset_size[@]}
+	do
+
+		for m in ${initial_method[@]}
+		do
+			# fasttree guide tree with and without ml
+			$time $next/timing.txt $HOME/methods/FastTree.sh -nt -gtr -gamma $out/${m}_${s}_ft_aln.fasta $next/${m}_${s}_ft_guide.tree
+			$time $next/timing.txt $HOME/methods/FastTree.sh -nt -gtr -gamma -noml $out/${m}_${s}_ftnoml_aln.fasta $next/${m}_${s}_ftnoml_guide.tree
+
+			for g in ${guide_method[@]}
+			do
+				# RF tree error
+				python3 $HOME/scripts/robinson_foulds.py $next/${m}_${s}_${g}_guide.tree $rtt > $next/${m}_${s}_${g}_rf.csv
+				# align using guide tree
+				$time $next/timing.txt $HOME/methods/magus --recurse false --maxsubsetsize $s -i $unalign -t $next/${m}_${s}_${g}_guide.tree -o $next/${m}_${s}_${g}_aln.fasta -d $magus_tmp --overwrite
+				# alignment error
+				java -jar $HOME/scripts/FastSP.jar -r $aln -e $next/${m}_${s}_${g}_aln.fasta > $next/${m}_${s}_${g}_sp.txt
+				# clean magus run
+				rm -rf $magus_tmp
+			done
+		done
+	done
+
+	out=$next
+done
+
+# NOTE: sp was writing to $out not $next
