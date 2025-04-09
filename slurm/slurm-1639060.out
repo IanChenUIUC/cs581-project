@@ -1,0 +1,1040 @@
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3333, Cells= 7494000
+computing ...
+Number of shared homologies: 426999407
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490666530
+Number of correctly aligned columns: 243
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2685
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 648 0
+Time to compute (seconds): 0.331
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3333, Cells= 7494000
+computing ...
+Number of shared homologies: 426999407
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490666530
+Number of correctly aligned columns: 243
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2685
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 648 0
+Time to compute (seconds): 0.324
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3380, Cells= 7541000
+computing ...
+Number of shared homologies: 431249277
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490691218
+Number of correctly aligned columns: 353
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2581
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 799 0
+Time to compute (seconds): 0.349
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3380, Cells= 7541000
+computing ...
+Number of shared homologies: 431249277
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490691218
+Number of correctly aligned columns: 353
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2581
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 799 0
+Time to compute (seconds): 0.354
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3840, Cells= 8001000
+computing ...
+Number of shared homologies: 429963310
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 484827470
+Number of correctly aligned columns: 442
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2865
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 975 0
+Time to compute (seconds): 0.378
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3840, Cells= 8001000
+computing ...
+Number of shared homologies: 429963310
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 484827470
+Number of correctly aligned columns: 442
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2865
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 975 0
+Time to compute (seconds): 0.38
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3832, Cells= 7993000
+computing ...
+Number of shared homologies: 432680311
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488209618
+Number of correctly aligned columns: 437
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2831
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1001 0
+Time to compute (seconds): 0.371
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3832, Cells= 7993000
+computing ...
+Number of shared homologies: 432680311
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488209618
+Number of correctly aligned columns: 437
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2831
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1001 0
+Time to compute (seconds): 0.372
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3743, Cells= 7904000
+computing ...
+Number of shared homologies: 436250837
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490739105
+Number of correctly aligned columns: 439
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2748
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 995 0
+Time to compute (seconds): 0.33
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/magus_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3743, Cells= 7904000
+computing ...
+Number of shared homologies: 436250837
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490739105
+Number of correctly aligned columns: 439
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2748
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 995 0
+Time to compute (seconds): 0.332
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4412, Cells= 8573000
+computing ...
+Number of shared homologies: 322525794
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 469161918
+Number of correctly aligned columns: 57
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3891
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 521 0
+Time to compute (seconds): 0.364
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4412, Cells= 8573000
+computing ...
+Number of shared homologies: 322525794
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 469161918
+Number of correctly aligned columns: 57
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3891
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 521 0
+Time to compute (seconds): 0.373
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 5272, Cells= 9433000
+computing ...
+Number of shared homologies: 329330003
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 466643891
+Number of correctly aligned columns: 86
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4464
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 808 0
+Time to compute (seconds): 0.385
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 5272, Cells= 9433000
+computing ...
+Number of shared homologies: 329330003
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 466643891
+Number of correctly aligned columns: 86
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4464
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 808 0
+Time to compute (seconds): 0.39
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 5989, Cells= 10150000
+computing ...
+Number of shared homologies: 318532460
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 473984228
+Number of correctly aligned columns: 109
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4763
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1226 0
+Time to compute (seconds): 0.4
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 5989, Cells= 10150000
+computing ...
+Number of shared homologies: 318532460
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 473984228
+Number of correctly aligned columns: 109
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4763
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1226 0
+Time to compute (seconds): 0.4
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 6130, Cells= 10291000
+computing ...
+Number of shared homologies: 313947986
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 467925570
+Number of correctly aligned columns: 101
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4901
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1229 0
+Time to compute (seconds): 0.404
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 6130, Cells= 10291000
+computing ...
+Number of shared homologies: 313947986
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 467925570
+Number of correctly aligned columns: 101
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4901
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1229 0
+Time to compute (seconds): 0.403
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 5988, Cells= 10149000
+computing ...
+Number of shared homologies: 319309993
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 473319459
+Number of correctly aligned columns: 95
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4658
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1330 0
+Time to compute (seconds): 0.399
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter1/clustalo_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 5988, Cells= 10149000
+computing ...
+Number of shared homologies: 319309993
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 473319459
+Number of correctly aligned columns: 95
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 4658
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1330 0
+Time to compute (seconds): 0.401
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3240, Cells= 7401000
+computing ...
+Number of shared homologies: 426626489
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491633226
+Number of correctly aligned columns: 231
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2698
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 542 0
+Time to compute (seconds): 0.323
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3291, Cells= 7452000
+computing ...
+Number of shared homologies: 432816702
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491591327
+Number of correctly aligned columns: 254
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2664
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 627 0
+Time to compute (seconds): 0.321
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3325, Cells= 7486000
+computing ...
+Number of shared homologies: 428380141
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491520248
+Number of correctly aligned columns: 265
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2722
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 603 0
+Time to compute (seconds): 0.365
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3289, Cells= 7450000
+computing ...
+Number of shared homologies: 419780979
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489251419
+Number of correctly aligned columns: 197
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2737
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 552 0
+Time to compute (seconds): 0.323
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3492, Cells= 7653000
+computing ...
+Number of shared homologies: 426416892
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 487549837
+Number of correctly aligned columns: 352
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2654
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 838 0
+Time to compute (seconds): 0.329
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3462, Cells= 7623000
+computing ...
+Number of shared homologies: 440198717
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 493081148
+Number of correctly aligned columns: 378
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2585
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 877 0
+Time to compute (seconds): 0.33
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3675, Cells= 7836000
+computing ...
+Number of shared homologies: 423411599
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 485514252
+Number of correctly aligned columns: 303
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2858
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 817 0
+Time to compute (seconds): 0.377
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3550, Cells= 7711000
+computing ...
+Number of shared homologies: 421682958
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490016355
+Number of correctly aligned columns: 218
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2766
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 784 0
+Time to compute (seconds): 0.332
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3858, Cells= 8019000
+computing ...
+Number of shared homologies: 427393786
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489332372
+Number of correctly aligned columns: 447
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2758
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1100 0
+Time to compute (seconds): 0.346
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3826, Cells= 7987000
+computing ...
+Number of shared homologies: 435469254
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488484553
+Number of correctly aligned columns: 432
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2756
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1070 0
+Time to compute (seconds): 0.34
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4242, Cells= 8403000
+computing ...
+Number of shared homologies: 415156378
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 484138938
+Number of correctly aligned columns: 337
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3145
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1097 0
+Time to compute (seconds): 0.361
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4279, Cells= 8440000
+computing ...
+Number of shared homologies: 414123060
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 482370712
+Number of correctly aligned columns: 357
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3141
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1138 0
+Time to compute (seconds): 0.359
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3889, Cells= 8050000
+computing ...
+Number of shared homologies: 423767110
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 485129381
+Number of correctly aligned columns: 442
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2844
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1045 0
+Time to compute (seconds): 0.349
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3801, Cells= 7962000
+computing ...
+Number of shared homologies: 427588291
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 487391892
+Number of correctly aligned columns: 440
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2740
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1061 0
+Time to compute (seconds): 0.337
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4058, Cells= 8219000
+computing ...
+Number of shared homologies: 409499334
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489776704
+Number of correctly aligned columns: 319
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2995
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1063 0
+Time to compute (seconds): 0.35
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4226, Cells= 8387000
+computing ...
+Number of shared homologies: 407563576
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 480070637
+Number of correctly aligned columns: 350
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3176
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1050 0
+Time to compute (seconds): 0.372
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3838, Cells= 7999000
+computing ...
+Number of shared homologies: 426625706
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489882196
+Number of correctly aligned columns: 450
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2747
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1091 0
+Time to compute (seconds): 0.338
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/magus_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3855, Cells= 8016000
+computing ...
+Number of shared homologies: 428418475
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 485827899
+Number of correctly aligned columns: 396
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2825
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1030 0
+Time to compute (seconds): 0.381
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4265, Cells= 8426000
+computing ...
+Number of shared homologies: 400145340
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 485633136
+Number of correctly aligned columns: 300
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3174
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1091 0
+Time to compute (seconds): 0.36
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter2/clustalo_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4087, Cells= 8248000
+computing ...
+Number of shared homologies: 410943893
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489222103
+Number of correctly aligned columns: 289
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3099
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 988 0
+Time to compute (seconds): 0.349
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3319, Cells= 7480000
+computing ...
+Number of shared homologies: 418486406
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 487520609
+Number of correctly aligned columns: 230
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2755
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 564 0
+Time to compute (seconds): 0.325
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3251, Cells= 7412000
+computing ...
+Number of shared homologies: 428589595
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491246051
+Number of correctly aligned columns: 267
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2676
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 575 0
+Time to compute (seconds): 0.363
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3298, Cells= 7459000
+computing ...
+Number of shared homologies: 414782695
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488047202
+Number of correctly aligned columns: 263
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2667
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 631 0
+Time to compute (seconds): 0.326
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3294, Cells= 7455000
+computing ...
+Number of shared homologies: 417628122
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488680808
+Number of correctly aligned columns: 254
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2771
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 523 0
+Time to compute (seconds): 0.354
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3434, Cells= 7595000
+computing ...
+Number of shared homologies: 433488540
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489844474
+Number of correctly aligned columns: 367
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2572
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 862 0
+Time to compute (seconds): 0.328
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3509, Cells= 7670000
+computing ...
+Number of shared homologies: 433557213
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489503920
+Number of correctly aligned columns: 353
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2610
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 899 0
+Time to compute (seconds): 0.331
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3610, Cells= 7771000
+computing ...
+Number of shared homologies: 426679630
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489798514
+Number of correctly aligned columns: 340
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2809
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 801 0
+Time to compute (seconds): 0.328
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3604, Cells= 7765000
+computing ...
+Number of shared homologies: 426388014
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488747870
+Number of correctly aligned columns: 344
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2772
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 832 0
+Time to compute (seconds): 0.334
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3850, Cells= 8011000
+computing ...
+Number of shared homologies: 422982255
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488138429
+Number of correctly aligned columns: 443
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2785
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1065 0
+Time to compute (seconds): 0.332
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3758, Cells= 7919000
+computing ...
+Number of shared homologies: 433998278
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490893121
+Number of correctly aligned columns: 451
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2682
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1076 0
+Time to compute (seconds): 0.34
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4083, Cells= 8244000
+computing ...
+Number of shared homologies: 422081907
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 487051563
+Number of correctly aligned columns: 431
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3007
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1076 0
+Time to compute (seconds): 0.348
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4379, Cells= 8540000
+computing ...
+Number of shared homologies: 406855257
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 483540451
+Number of correctly aligned columns: 394
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3257
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1122 0
+Time to compute (seconds): 0.363
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3789, Cells= 7950000
+computing ...
+Number of shared homologies: 430085889
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489176101
+Number of correctly aligned columns: 432
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2729
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1060 0
+Time to compute (seconds): 0.341
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3773, Cells= 7934000
+computing ...
+Number of shared homologies: 424101273
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 487954885
+Number of correctly aligned columns: 402
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2728
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1045 0
+Time to compute (seconds): 0.347
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3974, Cells= 8135000
+computing ...
+Number of shared homologies: 416235397
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488031279
+Number of correctly aligned columns: 340
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2947
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1027 0
+Time to compute (seconds): 0.343
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4098, Cells= 8259000
+computing ...
+Number of shared homologies: 418977331
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489026107
+Number of correctly aligned columns: 385
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3031
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1067 0
+Time to compute (seconds): 0.353
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3824, Cells= 7985000
+computing ...
+Number of shared homologies: 430649947
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489176626
+Number of correctly aligned columns: 430
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2747
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1077 0
+Time to compute (seconds): 0.376
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/magus_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3721, Cells= 7882000
+computing ...
+Number of shared homologies: 435075204
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489962055
+Number of correctly aligned columns: 415
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2688
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1033 0
+Time to compute (seconds): 0.333
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4012, Cells= 8173000
+computing ...
+Number of shared homologies: 420455357
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 487286886
+Number of correctly aligned columns: 384
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2993
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1019 0
+Time to compute (seconds): 0.391
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter3/clustalo_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4100, Cells= 8261000
+computing ...
+Number of shared homologies: 406457497
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 479610890
+Number of correctly aligned columns: 353
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3071
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1029 0
+Time to compute (seconds): 0.35
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3253, Cells= 7414000
+computing ...
+Number of shared homologies: 424835800
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491197212
+Number of correctly aligned columns: 218
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2676
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 577 0
+Time to compute (seconds): 0.325
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3269, Cells= 7430000
+computing ...
+Number of shared homologies: 431553318
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491727912
+Number of correctly aligned columns: 267
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2645
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 624 0
+Time to compute (seconds): 0.355
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_200_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3449, Cells= 7610000
+computing ...
+Number of shared homologies: 418810335
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 483204852
+Number of correctly aligned columns: 268
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2856
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 593 0
+Time to compute (seconds): 0.334
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_200_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3309, Cells= 7470000
+computing ...
+Number of shared homologies: 417380913
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489642826
+Number of correctly aligned columns: 249
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2723
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 586 0
+Time to compute (seconds): 0.327
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3403, Cells= 7564000
+computing ...
+Number of shared homologies: 436827696
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489421236
+Number of correctly aligned columns: 352
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2605
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 798 0
+Time to compute (seconds): 0.352
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3478, Cells= 7639000
+computing ...
+Number of shared homologies: 426902878
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 484912176
+Number of correctly aligned columns: 346
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2639
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 839 0
+Time to compute (seconds): 0.361
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_100_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3493, Cells= 7654000
+computing ...
+Number of shared homologies: 425560581
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491148802
+Number of correctly aligned columns: 319
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2651
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 842 0
+Time to compute (seconds): 0.327
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_100_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3515, Cells= 7676000
+computing ...
+Number of shared homologies: 431252046
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489924879
+Number of correctly aligned columns: 305
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2726
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 789 0
+Time to compute (seconds): 0.325
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3750, Cells= 7911000
+computing ...
+Number of shared homologies: 431556801
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 491180835
+Number of correctly aligned columns: 431
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2699
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1051 0
+Time to compute (seconds): 0.328
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3789, Cells= 7950000
+computing ...
+Number of shared homologies: 425818254
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 487637854
+Number of correctly aligned columns: 433
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2728
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1061 0
+Time to compute (seconds): 0.343
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_50_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4071, Cells= 8232000
+computing ...
+Number of shared homologies: 418790892
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488452752
+Number of correctly aligned columns: 394
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2949
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1122 0
+Time to compute (seconds): 0.344
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_50_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4192, Cells= 8353000
+computing ...
+Number of shared homologies: 416001461
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 485762334
+Number of correctly aligned columns: 395
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3178
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1014 0
+Time to compute (seconds): 0.354
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3773, Cells= 7934000
+computing ...
+Number of shared homologies: 427509038
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490444366
+Number of correctly aligned columns: 419
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2706
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1067 0
+Time to compute (seconds): 0.338
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3825, Cells= 7986000
+computing ...
+Number of shared homologies: 427857004
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488270927
+Number of correctly aligned columns: 414
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2757
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1068 0
+Time to compute (seconds): 0.341
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_25_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3891, Cells= 8052000
+computing ...
+Number of shared homologies: 421241792
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 488652519
+Number of correctly aligned columns: 389
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2916
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 975 0
+Time to compute (seconds): 0.345
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_25_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4035, Cells= 8196000
+computing ...
+Number of shared homologies: 422814704
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 486971544
+Number of correctly aligned columns: 404
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3083
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 952 0
+Time to compute (seconds): 0.355
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3864, Cells= 8025000
+computing ...
+Number of shared homologies: 420521649
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489185750
+Number of correctly aligned columns: 440
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2756
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1108 0
+Time to compute (seconds): 0.342
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/magus_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3798, Cells= 7959000
+computing ...
+Number of shared homologies: 434948392
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 490046963
+Number of correctly aligned columns: 396
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 2640
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1158 0
+Time to compute (seconds): 0.336
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_10_ft_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 4068, Cells= 8229000
+computing ...
+Number of shared homologies: 419898941
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 489202939
+Number of correctly aligned columns: 368
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3028
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 1040 0
+Time to compute (seconds): 0.399
+Reference alignment: /u/ianchen3/project/data/ROSE/1000M1/R2/rose.aln.true.fasta ...
+Estimated alignment: /u/ianchen3/project/output/E1/R2/iter4/clustalo_10_ftnoml_aln.fasta ...
+MaxLenNoGap= 1069, NumSeq= 1000, LenRef= 4161, LenEst= 3958, Cells= 8119000
+computing ...
+Number of shared homologies: 416173225
+Number of homologies in the reference alignment: 494989037
+Number of homologies in the estimated alignment: 485982772
+Number of correctly aligned columns: 387
+Number of aligned columns in ref. alignment: 2528
+Number of singleton and (uncollapsed) insertion columns in ref. alignment: 1633 0
+Number of aligned columns in est. alignment: 3009
+Number of singleton and (uncollapsed) insertion columns in est. alignment: 949 0
+Time to compute (seconds): 0.345

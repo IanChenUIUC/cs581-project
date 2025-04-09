@@ -89,5 +89,3 @@ do
 
 	out=$next
 done
-
-# NOTE: sp was writing to $out not $next

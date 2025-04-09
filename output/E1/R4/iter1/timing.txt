@@ -1,4 +1,3 @@
-/u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R4/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E1/R4/iter1/magus_guide.tree --onlyguidetree true -d /u/ianchen3/magus_temp/magus_working_dir-1587671 --overwrite
 /u/ianchen3/methods/magus --recurse false -i /u/ianchen3/project/data/ROSE/1000M1/R4/rose.aln.unalign.fasta -o /u/ianchen3/project/output/E1/R4/iter1/magus_guide.tree --onlyguidetree true -d /u/ianchen3/magus_temp/magus_working_dir-1587679 --overwrite
 1101.24user 3.41system 2:22.33elapsed 776%CPU (0avgtext+0avgdata 848260maxresident)k
 24632inputs+70848outputs (45major+1793180minor)pagefaults 0swaps
