@@ -27,10 +27,7 @@ data["RFFP"] = []
 data["SPFN"] = []
 data["SPFP"] = []
 data["Runtime"] = []
-data["RFFN_std"] = []
-data["RFFP_std"] = []
-data["SPFN_std"] = []
-data["SPFP_std"] = []
+data["Replicate"] = []
 
 def search(l, s):
     # searches the list until it finds a line containing s
@@ -52,9 +49,6 @@ for (s, t, g) in it.product(subsets, initial, guide):
 
     for i in iterations:
         runtime.append([])
-
-        # error[replicate]
-        spfn, spfp, rffn, rffp = [], [], [], []
 
         for r in range(1, num_replicates):
             time = f"~/project/output/E1/R{r}/iter{i}/timing.txt"
@@ -84,28 +78,20 @@ for (s, t, g) in it.product(subsets, initial, guide):
 
             with open(os.path.expanduser(sp), "r") as f:
                 lines = f.readlines()
-                spfn.append(float(lines[2].split(" ")[1]))
-                spfp.append(float(lines[3].split(" ")[1]))
+                data["SPFN"].append(float(lines[2].split(" ")[1]))
+                data["SPFP"].append(float(lines[3].split(" ")[1]))
 
             with open(os.path.expanduser(rf), "r") as f:
                 lines = f.readlines()
-                rffn.append(float(lines[1].split(",")[0]))
-                rffp.append(float(lines[1].split(",")[1]))
+                data["RFFN"].append(float(lines[1].split(",")[0]))
+                data["RFFP"].append(float(lines[1].split(",")[1]))
 
-        data["Iteration"].append(i)
-        data["Subset_Size"].append(s)
-        data["Initial_Method"].append(t)
-        data["GuideTree_Method"].append(g)
-
-        data["RFFN"].append(np.average(rffn))
-        data["RFFP"].append(np.average(rffp))
-        data["SPFN"].append(np.average(spfn))
-        data["SPFP"].append(np.average(spfp))
-        data["RFFN_std"].append(np.std(rffn))
-        data["RFFP_std"].append(np.std(rffp))
-        data["SPFN_std"].append(np.std(spfn))
-        data["SPFP_std"].append(np.std(spfp))
-        data["Runtime"].append(sum(np.average(rt) for rt in runtime))
+            data["Iteration"].append(i)
+            data["Subset_Size"].append(s)
+            data["Initial_Method"].append(t)
+            data["GuideTree_Method"].append(g)
+            data["Runtime"].append(sum(runtime[j][r - 1] for j in range(i)))
+            data["Replicate"].append(r)
 
 df = pd.DataFrame.from_dict(data)
 df.to_csv("Results.csv", index=False, float_format='%.4f')

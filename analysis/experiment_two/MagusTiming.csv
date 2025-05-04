@@ -78,6 +78,7 @@ RNASim-1000,R0,magus_clustalo-iter2,2,1620.8100
 RNASim-1000,R0,magus_clustalo-iter2guide,2,1677.1500
 RNASim-1000,R0,magus_clustalo-iter3,3,2545.1000
 RNASim-1000,R0,magus_clustalo-iter3guide,3,2601.2700
+RNASim-1000,R0,magus_clustalo-iter4,4,3494.3600
 RNASim-1000,R0,magus_default-iter0initi,0,481.7100
 RNASim-1000,R0,magus_default-iter1,1,1464.7700
 RNASim-1000,R0,magus_magus-iter0initi,0,439.1900
@@ -95,6 +96,7 @@ RNASim-1000,R1,magus_clustalo-iter2,2,1659.1000
 RNASim-1000,R1,magus_clustalo-iter2guide,2,1717.5500
 RNASim-1000,R1,magus_clustalo-iter3,3,2503.5100
 RNASim-1000,R1,magus_clustalo-iter3guide,3,2561.1800
+RNASim-1000,R1,magus_clustalo-iter4,4,3815.0000
 RNASim-1000,R1,magus_default-iter0initi,0,552.0100
 RNASim-1000,R1,magus_default-iter1,1,1537.3200
 RNASim-1000,R1,magus_magus-iter0initi,0,489.0500

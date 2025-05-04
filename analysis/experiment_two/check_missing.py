@@ -11,7 +11,7 @@ replicas = [1,      1,          1,          1,      10,             10,         
 
 # magus variants
 magus = ["magus_default", "magus_magus", "magus_clustalo"]
-iters = [2,                 4,              4           ]
+iters = [2,                 5,              5           ]
 
 # all methods (besides pasta)
 # methods = ["clustalo", "mafft", "muscle", "pasta/iter3"]
