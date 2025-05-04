@@ -15,6 +15,9 @@
 ## MAGUS
 	~/methods/magus -i [<unaligned-fasta>] -o [<output-fasta>]
 
+## PASTA
+	~/methods/pasta -i [<unaligned-fasta>] -d [<DNA, RNA, protein>] --iter-limit=[<1, 2, 3>] -o [<>]
+
 # Analysis Commands:
 
 ## Tree Error
@@ -69,6 +72,9 @@ I installed FastSP v1.7.1 by running `wget` on the [jar file](https://github.com
 
 ## ClustalOmega
 I installed ClustalOmega v1.2.4 by running `wget` on the [linux standalone precompiled binary](http://www.clustal.org/omega/).
+
+## PASTA
+I downloaded PASTA v1.9.2 [here](https://github.com/smirarab/pasta).
 
 # Other Notes
 
