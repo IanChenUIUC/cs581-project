@@ -50,7 +50,7 @@ for (s, t, g) in it.product(subsets, initial, guide):
     for i in iterations:
         runtime.append([])
 
-        for r in range(1, num_replicates):
+        for r in range(0, num_replicates):
             time = f"~/project/output/E1/R{r}/iter{i}/timing.txt"
             with open(os.path.expanduser(time)) as f:
                 lines = f.readlines()
